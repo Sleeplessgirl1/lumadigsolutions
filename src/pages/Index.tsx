@@ -32,11 +32,12 @@ const Index = () => {
             <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-primary mb-8">
               Agencia Digital en México
             </span>
-            <h1 className="text-5xl sm:text-6xl md:text-8xl font-display font-bold text-foreground leading-[1.1] tracking-tight mb-8 uppercase">
+            <h1 className="text-5xl sm:text-6xl md:text-8xl font-display font-bold text-foreground leading-[1.1] tracking-tight uppercase">
               Tu marca tiene
               <br />
               <span className="text-gradient">historia</span>
             </h1>
+            <p className="text-sm sm:text-base text-muted-foreground font-body tracking-widest uppercase mb-8">Nosotros la contamos</p>
             <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 font-body leading-relaxed">
               Desarrollamos soluciones digitales que transforman negocios. Web, branding, IA y software a medida.
             </p>
