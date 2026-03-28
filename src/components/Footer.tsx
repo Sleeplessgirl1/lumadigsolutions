@@ -61,7 +61,7 @@ const Footer = () => {
             <h4 className="font-display font-bold text-sm uppercase tracking-wider mb-6">Contacto</h4>
             <div className="space-y-4">
               <a href="mailto:hola@lumadigital.mx" className="flex items-center gap-3 text-lg font-display font-bold text-background hover:text-primary transition-colors duration-200">
-                <Mail className="w-5 h-5" /> hola@lumadigital.mx
+                <Mail className="w-5 h-5" />hola@lumadigital.mx
               </a>
               <a href="tel:+521234567890" className="flex items-center gap-3 text-lg font-display font-bold text-background hover:text-primary transition-colors duration-200">
                 <Phone className="w-5 h-5" /> +52 (123) 456-7890
