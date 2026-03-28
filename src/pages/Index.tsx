@@ -211,7 +211,7 @@ const Index = () => {
           </div>
           <AnimatedSection className="mt-14">
             <Button asChild>
-              <a href="https://wa.me/521234567890" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/526145154240" target="_blank" rel="noopener noreferrer">
                 Te Mostramos Cómo <ArrowRight className="ml-2 w-4 h-4" />
               </a>
             </Button>
