@@ -29,45 +29,45 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="pt-20">
-      <section className="py-20 bg-gradient-dark text-center">
+    <div className="pt-[70px]">
+      <section className="py-28 bg-primary/5 text-center">
         <div className="container mx-auto px-4 sm:px-6">
           <AnimatedSection>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-bold text-secondary-foreground mb-4">Contacto</h1>
-            <p className="text-secondary-foreground/70 max-w-xl mx-auto text-lg">Cuéntanos sobre tu proyecto. La primera consulta es gratis.</p>
+            <h1 className="text-5xl sm:text-6xl md:text-7xl font-display font-bold text-foreground uppercase tracking-tight mb-6">Contacto</h1>
+            <p className="text-muted-foreground max-w-xl mx-auto text-lg">Cuéntanos sobre tu proyecto. La primera consulta es gratis.</p>
           </AnimatedSection>
         </div>
       </section>
 
-      <section className="py-24 bg-background">
+      <section className="py-28 md:py-36 bg-background">
         <div className="container mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 max-w-6xl mx-auto">
             {/* Form */}
             <div className="lg:col-span-2">
               <AnimatedSection>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <form onSubmit={handleSubmit} className="space-y-8">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
-                      <label className="text-sm font-medium text-foreground mb-1.5 block">Nombre *</label>
-                      <input required value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} className="w-full px-4 py-3 rounded-lg border border-border bg-card text-foreground text-sm focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition" placeholder="Tu nombre" />
+                      <label className="text-sm font-display font-bold text-foreground mb-2 block uppercase tracking-wider">Nombre *</label>
+                      <input required value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} className="w-full px-5 py-4 rounded-lg border-2 border-border bg-card text-foreground text-sm focus:ring-0 focus:border-primary outline-none transition-colors" placeholder="Tu nombre" />
                     </div>
                     <div>
-                      <label className="text-sm font-medium text-foreground mb-1.5 block">Email *</label>
-                      <input required type="email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} className="w-full px-4 py-3 rounded-lg border border-border bg-card text-foreground text-sm focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition" placeholder="tu@email.com" />
+                      <label className="text-sm font-display font-bold text-foreground mb-2 block uppercase tracking-wider">Email *</label>
+                      <input required type="email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} className="w-full px-5 py-4 rounded-lg border-2 border-border bg-card text-foreground text-sm focus:ring-0 focus:border-primary outline-none transition-colors" placeholder="tu@email.com" />
                     </div>
                     <div>
-                      <label className="text-sm font-medium text-foreground mb-1.5 block">Teléfono</label>
-                      <input type="tel" value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} className="w-full px-4 py-3 rounded-lg border border-border bg-card text-foreground text-sm focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition" placeholder="+52 (123) 456-7890" />
+                      <label className="text-sm font-display font-bold text-foreground mb-2 block uppercase tracking-wider">Teléfono</label>
+                      <input type="tel" value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} className="w-full px-5 py-4 rounded-lg border-2 border-border bg-card text-foreground text-sm focus:ring-0 focus:border-primary outline-none transition-colors" placeholder="+52 (123) 456-7890" />
                     </div>
                     <div>
-                      <label className="text-sm font-medium text-foreground mb-1.5 block">Empresa</label>
-                      <input value={form.company} onChange={(e) => setForm({ ...form, company: e.target.value })} className="w-full px-4 py-3 rounded-lg border border-border bg-card text-foreground text-sm focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition" placeholder="Tu empresa" />
+                      <label className="text-sm font-display font-bold text-foreground mb-2 block uppercase tracking-wider">Empresa</label>
+                      <input value={form.company} onChange={(e) => setForm({ ...form, company: e.target.value })} className="w-full px-5 py-4 rounded-lg border-2 border-border bg-card text-foreground text-sm focus:ring-0 focus:border-primary outline-none transition-colors" placeholder="Tu empresa" />
                     </div>
                   </div>
 
                   <div>
-                    <label className="text-sm font-medium text-foreground mb-1.5 block">Presupuesto estimado</label>
-                    <select value={form.budget} onChange={(e) => setForm({ ...form, budget: e.target.value })} className="w-full px-4 py-3 rounded-lg border border-border bg-card text-foreground text-sm focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition">
+                    <label className="text-sm font-display font-bold text-foreground mb-2 block uppercase tracking-wider">Presupuesto estimado</label>
+                    <select value={form.budget} onChange={(e) => setForm({ ...form, budget: e.target.value })} className="w-full px-5 py-4 rounded-lg border-2 border-border bg-card text-foreground text-sm focus:ring-0 focus:border-primary outline-none transition-colors">
                       <option value="">Selecciona un rango</option>
                       <option value="500-1000">$500 - $1,000 USD</option>
                       <option value="1000-3000">$1,000 - $3,000 USD</option>
@@ -78,8 +78,8 @@ const ContactPage = () => {
                   </div>
 
                   <div>
-                    <label className="text-sm font-medium text-foreground mb-3 block">Tipo de proyecto</label>
-                    <div className="flex flex-wrap gap-3">
+                    <label className="text-sm font-display font-bold text-foreground mb-4 block uppercase tracking-wider">Tipo de proyecto</label>
+                    <div className="flex flex-wrap gap-4">
                       {["Sitio Web", "E-commerce", "Branding", "Automatización IA", "Software", "Otro"].map((type) => (
                         <label key={type} className="flex items-center gap-2 text-sm cursor-pointer">
                           <input type="checkbox" checked={form.projectType.includes(type)} onChange={() => handleCheckbox(type)} className="w-4 h-4 rounded border-border text-primary focus:ring-primary" />
@@ -90,11 +90,11 @@ const ContactPage = () => {
                   </div>
 
                   <div>
-                    <label className="text-sm font-medium text-foreground mb-1.5 block">Mensaje *</label>
-                    <textarea required rows={5} value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} className="w-full px-4 py-3 rounded-lg border border-border bg-card text-foreground text-sm focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition resize-none" placeholder="Cuéntanos sobre tu proyecto..." />
+                    <label className="text-sm font-display font-bold text-foreground mb-2 block uppercase tracking-wider">Mensaje *</label>
+                    <textarea required rows={5} value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} className="w-full px-5 py-4 rounded-lg border-2 border-border bg-card text-foreground text-sm focus:ring-0 focus:border-primary outline-none transition-colors resize-none" placeholder="Cuéntanos sobre tu proyecto..." />
                   </div>
 
-                  <Button type="submit" disabled={loading} className="bg-gradient-primary hover:opacity-90 text-primary-foreground border-0 px-8 h-12">
+                  <Button type="submit" disabled={loading} size="lg">
                     {loading ? (
                       <span className="flex items-center gap-2"><span className="w-4 h-4 border-2 border-primary-foreground/30 border-t-primary-foreground rounded-full animate-spin" /> Enviando...</span>
                     ) : (
@@ -108,10 +108,10 @@ const ContactPage = () => {
             {/* Contact Info */}
             <div>
               <AnimatedSection delay={0.2}>
-                <div className="space-y-6">
-                  <div className="p-6 rounded-xl border border-border bg-card">
-                    <h3 className="font-display font-semibold text-foreground mb-4">Información de Contacto</h3>
-                    <div className="space-y-4">
+                <div className="space-y-8">
+                  <div className="card-colab">
+                    <h3 className="font-display font-bold text-foreground uppercase tracking-wide mb-6">Información</h3>
+                    <div className="space-y-5">
                       <a href="mailto:hola@lumadigital.mx" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary transition-colors">
                         <Mail className="w-5 h-5 text-primary" /> hola@lumadigital.mx
                       </a>
@@ -130,7 +130,7 @@ const ContactPage = () => {
                     </div>
                   </div>
 
-                  <div className="rounded-xl overflow-hidden border border-border">
+                  <div className="rounded-lg overflow-hidden border border-border">
                     <iframe
                       title="Ubicación LUMA"
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d240857.44994685427!2d-99.42677199999999!3d19.390519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0026db097507%3A0x54061076cda0e0!2sCiudad%20de%20M%C3%A9xico!5e0!3m2!1ses-419!2smx!4v1"
