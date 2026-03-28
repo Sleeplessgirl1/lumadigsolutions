@@ -29,7 +29,7 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-primary mb-8">
+            <span className="inline-block font-bold uppercase tracking-[0.2em] text-primary mb-8 text-xl">
               Agencia Digital en México
             </span>
             <h1 className="text-5xl sm:text-6xl md:text-8xl font-display font-bold text-foreground leading-[1.1] tracking-tight uppercase">
@@ -37,11 +37,11 @@ const Index = () => {
               <br />
               <span className="text-gradient">historia</span>
             </h1>
-            <p className="text-sm sm:text-base text-muted-foreground font-body tracking-widest uppercase mb-8">Nosotros la contamos</p>
+            <p className="text-sm text-muted-foreground font-body tracking-widest uppercase mb-8 sm:text-2xl">Nosotros la contamos</p>
             <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 font-body leading-relaxed">
               Desarrollamos soluciones digitales que transforman negocios. Web, branding, IA y software a medida.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mx-[11px] px-0">
               <Button asChild size="lg">
                 <a href="#servicios">
                   Comienza Ahora <ArrowRight className="ml-2 w-4 h-4" />
@@ -53,56 +53,8 @@ const Index = () => {
                 </a>
               </Button>
             </div>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.2, duration: 0.5 }}
-            className="absolute bottom-10 left-1/2 -translate-x-1/2"
-          >
-            <a href="#servicios" className="text-muted-foreground hover:text-primary transition-colors">
-              <ArrowDown className="w-6 h-6 animate-float" />
-            </a>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* SERVICIOS */}
-      <section id="servicios" className="py-28 md:py-36 bg-background">
-        <div className="container mx-auto px-4 sm:px-6">
-          <AnimatedSection className="mb-20">
-            <div className="flex items-center gap-3 mb-4">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-foreground uppercase tracking-tight">
-                Lo que hacemos
-              </h2>
-              <ArrowRight className="w-8 h-8 text-primary hidden sm:block" />
-            </div>
-            <p className="text-muted-foreground max-w-xl text-lg">
-              Soluciones integrales para llevar tu negocio al siguiente nivel
-            </p>
-          </AnimatedSection>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {services.map((service, i) => {
-              const Icon = iconMap[service.icon];
-              return (
-                <AnimatedSection key={service.id} delay={i * 0.1}>
-                  <div className="card-colab h-full">
-                    <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
-                      <Icon className="w-7 h-7 text-primary" />
-                    </div>
-                    <h3 className="font-display font-bold text-lg text-foreground uppercase tracking-wide mb-4">{service.title}</h3>
-                    <div className="section-divider" />
-                    <div className="space-y-2">
-                      {service.subServices.map((sub) => (
-                        <p key={sub} className="text-sm text-muted-foreground">{sub}</p>
-                      ))}
-                    </div>
-                  </div>
-                </AnimatedSection>
-              );
-            })}
-          </div>
-          <AnimatedSection className="mt-14">
+...
+          <AnimatedSection className="mt-14 mx-0 text-center">
             <Button asChild>
               <Link to="/servicios">Somos Muy Talentosos <ArrowRight className="ml-2 w-4 h-4" /></Link>
             </Button>
