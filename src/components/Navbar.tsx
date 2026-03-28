@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
-import logo from "@/assets/logo.png";
+
 
 const navLinks = [
   { label: "Inicio", href: "/" },
@@ -23,7 +23,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-[70px]">
           <Link to="/" className="flex items-center">
-            <img src={logo} alt="LUMA Digital Solutions" className="h-10" />
+            <img src="/lovable-uploads/4cbe3695-a97b-46ad-91cc-7ee92ab15b14.png" alt="LUMA Digital Solutions" className="h-10" />
           </Link>
 
           <div className="hidden md:flex items-center gap-1">
