@@ -270,7 +270,7 @@ const Index = () => {
           <AnimatedSection className="text-center mt-10">
             <p className="text-muted-foreground text-sm">
               ¿Necesitas algo custom?{" "}
-              <a href="https://wa.me/521234567890" className="text-primary hover:underline font-medium" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/526145154240" className="text-primary hover:underline font-medium" target="_blank" rel="noopener noreferrer">
                 Agenda una consulta gratis
               </a>
             </p>
