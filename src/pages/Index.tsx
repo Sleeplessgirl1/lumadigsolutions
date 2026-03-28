@@ -29,7 +29,7 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-primary mb-8">
+            <span className="inline-block font-bold uppercase tracking-[0.2em] text-primary mb-8 text-xl">
               Agencia Digital en México
             </span>
             <h1 className="text-5xl sm:text-6xl md:text-8xl font-display font-bold text-foreground leading-[1.1] tracking-tight uppercase">
@@ -37,11 +37,11 @@ const Index = () => {
               <br />
               <span className="text-gradient">historia</span>
             </h1>
-            <p className="text-sm sm:text-base text-muted-foreground font-body tracking-widest uppercase mb-8">Nosotros la contamos</p>
+            <p className="text-sm text-muted-foreground font-body tracking-widest uppercase mb-8 sm:text-2xl">Nosotros la contamos</p>
             <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 font-body leading-relaxed">
               Desarrollamos soluciones digitales que transforman negocios. Web, branding, IA y software a medida.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mx-[11px] px-0">
               <Button asChild size="lg">
                 <a href="#servicios">
                   Comienza Ahora <ArrowRight className="ml-2 w-4 h-4" />
@@ -102,7 +102,7 @@ const Index = () => {
               );
             })}
           </div>
-          <AnimatedSection className="mt-14">
+          <AnimatedSection className="mt-14 mx-0 text-center">
             <Button asChild>
               <Link to="/servicios">Somos Muy Talentosos <ArrowRight className="ml-2 w-4 h-4" /></Link>
             </Button>
