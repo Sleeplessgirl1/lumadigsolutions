@@ -48,7 +48,7 @@ const Index = () => {
                 </a>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <a href="https://wa.me/521234567890" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/526145154240" target="_blank" rel="noopener noreferrer">
                   Agenda Consulta Gratis
                 </a>
               </Button>
@@ -211,7 +211,7 @@ const Index = () => {
           </div>
           <AnimatedSection className="mt-14">
             <Button asChild>
-              <a href="https://wa.me/521234567890" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/526145154240" target="_blank" rel="noopener noreferrer">
                 Te Mostramos Cómo <ArrowRight className="ml-2 w-4 h-4" />
               </a>
             </Button>
@@ -259,7 +259,7 @@ const Index = () => {
                     variant={plan.highlighted ? "default" : "outline"}
                     className="w-full"
                   >
-                    <a href="https://wa.me/521234567890" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/526145154240" target="_blank" rel="noopener noreferrer">
                       {plan.cta}
                     </a>
                   </Button>
@@ -270,7 +270,7 @@ const Index = () => {
           <AnimatedSection className="text-center mt-10">
             <p className="text-muted-foreground text-sm">
               ¿Necesitas algo custom?{" "}
-              <a href="https://wa.me/521234567890" className="text-primary hover:underline font-medium" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/526145154240" className="text-primary hover:underline font-medium" target="_blank" rel="noopener noreferrer">
                 Agenda una consulta gratis
               </a>
             </p>
@@ -370,7 +370,7 @@ const Index = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg">
-                <a href="https://wa.me/521234567890" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/526145154240" target="_blank" rel="noopener noreferrer">
                   <Calendar className="mr-2 w-4 h-4" /> Agendar Consulta
                 </a>
               </Button>

@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
             <div className="mb-6">
-              <img src={logo} alt="LUMA Digital Solutions" className="h-10 brightness-0 invert" />
+              <img src="/lovable-uploads/e952e3f2-9250-4e1d-b89c-cc1fc2c6aaae.png" alt="LUMA Digital Solutions" className="h-10 brightness-0 invert" />
             </div>
             <p className="text-background/60 text-sm leading-relaxed mb-8">
               Tu marca tiene historia, nosotros la contamos. Soluciones digitales que transforman negocios.
@@ -63,8 +63,8 @@ const Footer = () => {
               <a href="mailto:hola@lumadigital.mx" className="flex items-center gap-3 text-lg font-display font-bold text-background hover:text-primary transition-colors duration-200">
                 <Mail className="w-5 h-5" />hola@lumadigital.mx
               </a>
-              <a href="tel:+521234567890" className="flex items-center gap-3 text-lg font-display font-bold text-background hover:text-primary transition-colors duration-200">
-                <Phone className="w-5 h-5" /> +52 (123) 456-7890
+              <a href="tel:+526145154240" className="flex items-center gap-3 text-lg font-display font-bold text-background hover:text-primary transition-colors duration-200">
+                <Phone className="w-5 h-5" /> +52 (614) 515-4240
               </a>
               <div className="flex items-start gap-3 text-sm text-background/60">
                 <MapPin className="w-4 h-4 mt-0.5 shrink-0" /> Ciudad de México, México
