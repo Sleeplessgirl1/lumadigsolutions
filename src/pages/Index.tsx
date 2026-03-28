@@ -370,7 +370,7 @@ const Index = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg">
-                <a href="https://wa.me/521234567890" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/526145154240" target="_blank" rel="noopener noreferrer">
                   <Calendar className="mr-2 w-4 h-4" /> Agendar Consulta
                 </a>
               </Button>
