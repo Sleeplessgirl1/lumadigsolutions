@@ -8,11 +8,8 @@ const Footer = () => {
       <div className="container mx-auto px-4 sm:px-6 py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
-            <div className="flex items-center gap-2 mb-6">
-              <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-                <span className="font-display font-bold text-primary-foreground text-sm">L</span>
-              </div>
-              <span className="font-display font-bold text-xl">LUMA Digital</span>
+            <div className="mb-6">
+              <img src={logo} alt="LUMA Digital Solutions" className="h-10 brightness-0 invert" />
             </div>
             <p className="text-background/60 text-sm leading-relaxed mb-8">
               Tu marca tiene historia, nosotros la contamos. Soluciones digitales que transforman negocios.
