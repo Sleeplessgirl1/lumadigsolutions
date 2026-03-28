@@ -48,7 +48,7 @@ const Index = () => {
                 </a>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <a href="https://wa.me/521234567890" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/526145154240" target="_blank" rel="noopener noreferrer">
                   Agenda Consulta Gratis
                 </a>
               </Button>

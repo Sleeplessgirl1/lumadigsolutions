@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
             <div className="mb-6">
-              <img src={logo} alt="LUMA Digital Solutions" className="h-10 brightness-0 invert" />
+              <img src="/lovable-uploads/e952e3f2-9250-4e1d-b89c-cc1fc2c6aaae.png" alt="LUMA Digital Solutions" className="h-10 brightness-0 invert" />
             </div>
             <p className="text-background/60 text-sm leading-relaxed mb-8">
               Tu marca tiene historia, nosotros la contamos. Soluciones digitales que transforman negocios.
