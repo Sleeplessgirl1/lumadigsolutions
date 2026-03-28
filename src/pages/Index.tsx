@@ -53,7 +53,55 @@ const Index = () => {
                 </a>
               </Button>
             </div>
-...
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.2, duration: 0.5 }}
+            className="absolute bottom-10 left-1/2 -translate-x-1/2"
+          >
+            <a href="#servicios" className="text-muted-foreground hover:text-primary transition-colors">
+              <ArrowDown className="w-6 h-6 animate-float" />
+            </a>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* SERVICIOS */}
+      <section id="servicios" className="py-28 md:py-36 bg-background">
+        <div className="container mx-auto px-4 sm:px-6">
+          <AnimatedSection className="mb-20">
+            <div className="flex items-center gap-3 mb-4">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-foreground uppercase tracking-tight">
+                Lo que hacemos
+              </h2>
+              <ArrowRight className="w-8 h-8 text-primary hidden sm:block" />
+            </div>
+            <p className="text-muted-foreground max-w-xl text-lg">
+              Soluciones integrales para llevar tu negocio al siguiente nivel
+            </p>
+          </AnimatedSection>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {services.map((service, i) => {
+              const Icon = iconMap[service.icon];
+              return (
+                <AnimatedSection key={service.id} delay={i * 0.1}>
+                  <div className="card-colab h-full">
+                    <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
+                      <Icon className="w-7 h-7 text-primary" />
+                    </div>
+                    <h3 className="font-display font-bold text-lg text-foreground uppercase tracking-wide mb-4">{service.title}</h3>
+                    <div className="section-divider" />
+                    <div className="space-y-2">
+                      {service.subServices.map((sub) => (
+                        <p key={sub} className="text-sm text-muted-foreground">{sub}</p>
+                      ))}
+                    </div>
+                  </div>
+                </AnimatedSection>
+              );
+            })}
+          </div>
           <AnimatedSection className="mt-14 mx-0 text-center">
             <Button asChild>
               <Link to="/servicios">Somos Muy Talentosos <ArrowRight className="ml-2 w-4 h-4" /></Link>
