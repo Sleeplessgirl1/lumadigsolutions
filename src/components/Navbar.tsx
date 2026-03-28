@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
+import logo from "@/assets/logo.png";
 
 const navLinks = [
   { label: "Inicio", href: "/" },
@@ -21,13 +22,8 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-lg border-b border-border/30">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-[70px]">
-          <Link to="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-              <span className="font-display font-bold text-primary-foreground text-sm">L</span>
-            </div>
-            <span className="font-display font-bold text-xl text-foreground tracking-tight">
-              LUMA<span className="text-primary"> Digital</span>
-            </span>
+          <Link to="/" className="flex items-center">
+            <img src={logo} alt="LUMA Digital Solutions" className="h-10" />
           </Link>
 
           <div className="hidden md:flex items-center gap-1">
