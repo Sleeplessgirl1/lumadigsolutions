@@ -43,12 +43,12 @@ const Index = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mx-[11px] px-0">
               <Button asChild size="lg">
-                <a href="#servicios">
+                <a href="https://wa.me/6145154240?text=Hola%20LUMA%2C%20me%20interesa%20conocer%20más%20sobre%20sus%20servicios">
                   Comienza Ahora <ArrowRight className="ml-2 w-4 h-4" />
                 </a>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <a href="https://wa.me/526145154240" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/6145154240?text=Hola%20LUMA%2C%20me%20interesa%20conocer%20más%20sobre%20sus%20servicios" target="_blank" rel="noopener noreferrer">
                   Agenda Consulta Gratis
                 </a>
               </Button>
@@ -61,14 +61,14 @@ const Index = () => {
             className="absolute bottom-10 left-1/2 -translate-x-1/2"
           >
             <a href="#servicios" className="text-muted-foreground hover:text-primary transition-colors">
-              <ArrowDown className="w-6 h-6 animate-float" />
+              <ArrowDown className="w-6 h-6 animate-float py-0 my-[19px]" />
             </a>
           </motion.div>
         </div>
       </section>
 
       {/* SERVICIOS */}
-      <section id="servicios" className="py-28 md:py-36 bg-background">
+      <section id="servicios" className="py-28 md:py-36 bg-background border-0 border-dotted rounded-3xl">
         <div className="container mx-auto px-4 sm:px-6">
           <AnimatedSection className="mb-20">
             <div className="flex items-center gap-3 mb-4">

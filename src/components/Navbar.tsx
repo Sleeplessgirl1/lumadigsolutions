@@ -23,7 +23,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-[70px]">
           <Link to="/" className="flex items-center">
-            <img src="/lovable-uploads/0e14da5e-17f0-40d1-8d46-e1802230e3fd.png" alt="LUMA Digital Solutions" className="h-10 py-0 mx-[15px] my-px object-fill" />
+            <img src="/lovable-uploads/17d55dea-e817-4cb8-8777-03d514e33b64.png" alt="LUMA Digital Solutions" className="h-10 py-0 mx-[15px] my-px object-fill" />
           </Link>
 
           <div className="hidden md:flex items-center gap-1">
