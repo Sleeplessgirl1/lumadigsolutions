@@ -192,8 +192,8 @@ export const blogPosts = [
 export const pricingPlans = [
   {
     name: "Starter",
-    price: "$499",
-    period: "USD",
+    price: "$3,200",
+    period: "MXN",
     description: "Perfecto para emprendedores y negocios nuevos",
     features: [
       "Landing page profesional",
@@ -208,8 +208,8 @@ export const pricingPlans = [
   },
   {
     name: "Business",
-    price: "$1,499",
-    period: "USD",
+    price: "$6,500",
+    period: "MXN",
     description: "Para empresas que buscan crecer online",
     features: [
       "Sitio web multi-página",
@@ -226,8 +226,8 @@ export const pricingPlans = [
   },
   {
     name: "E-commerce",
-    price: "$2,999",
-    period: "USD",
+    price: "$10,000",
+    period: "MXN",
     description: "Tienda online completa lista para vender",
     features: [
       "Todo en Business +",
