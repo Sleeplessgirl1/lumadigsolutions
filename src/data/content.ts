@@ -317,6 +317,6 @@ export const faqItems = [
   },
   {
     question: "¿Cómo es el proceso de pago?",
-    answer: "Trabajamos con un modelo de 50% anticipo y 50% al entregar. Para proyectos grandes, ofrecemos pagos en 3 parcialidades. Aceptamos transferencia, PayPal y tarjeta.",
+    answer: "Trabajamos con un modelo de 50% anticipo y 50% al entregar. Para proyectos grandes, ofrecemos pagos en 3 parcialidades. Aceptamos transferencia, Stripe, PayPal y tarjeta.",
   },
 ];
