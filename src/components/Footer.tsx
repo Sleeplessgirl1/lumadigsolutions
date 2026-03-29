@@ -42,7 +42,7 @@ const Footer = () => {
           <div className="mt-16 pt-8 border-t border-foreground/20 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
             <div className="flex items-start gap-2 text-sm text-foreground/60">
               <MapPin className="w-4 h-4 mt-0.5 shrink-0" />
-              Ciudad de México, México
+              CUU
             </div>
             <p className="text-sm text-foreground/60">
               © {new Date().getFullYear()} LUMA Digital Solutions. Todos los derechos reservados.
