@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, ArrowRight, Monitor, Palette, Bot, Settings, Star, Check, Calendar, ChevronRight } from "lucide-react";
+import { ArrowDown, ArrowRight, Monitor, Palette, Bot, Settings, Star, Check, Calendar, ChevronRight, X } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useRef } from "react";
