@@ -61,7 +61,7 @@ const Index = () => {
             className="absolute bottom-10 left-1/2 -translate-x-1/2"
           >
             <a href="#servicios" className="text-muted-foreground hover:text-primary transition-colors">
-              <ArrowDown className="w-6 h-6 animate-float" />
+              <ArrowDown className="w-6 h-6 animate-float py-0 my-[19px]" />
             </a>
           </motion.div>
         </div>
