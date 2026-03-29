@@ -159,63 +159,52 @@ const Index = () => {
         </div>
       </section>
 
-      {/* PROCESO - Two column parallax */}
+      {/* PROCESO - Two column layout */}
       <section className="py-28 md:py-36 bg-background" ref={processRef}>
         <div className="container mx-auto px-4 sm:px-6">
-          <AnimatedSection className="mb-20">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-foreground uppercase tracking-tight">
-              Nuestro Proceso
-            </h2>
-            <p className="text-muted-foreground mt-4 text-lg">Hacemos más, hablamos menos</p>
-          </AnimatedSection>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-            {/* Left - Static text */}
-            <div className="space-y-16">
+            {/* Left - Steps */}
+            <div className="space-y-14">
               {processSteps.map((step, i) => (
                 <AnimatedSection key={step.number} delay={i * 0.15}>
                   <div>
-                    <div className="flex items-center gap-4 mb-4">
-                      <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-display font-bold text-sm">
-                        {step.number}
-                      </div>
-                      <h3 className="font-display font-bold text-2xl text-foreground uppercase tracking-wide">{step.title}</h3>
-                    </div>
-                    <p className="text-muted-foreground text-lg leading-relaxed pl-16">{step.description}</p>
+                    <h3 className="font-display font-bold text-xl md:text-2xl text-foreground uppercase tracking-wide mb-3">
+                      {step.title}
+                    </h3>
+                    <div className="w-full h-[2px] bg-primary/30 mb-4" />
+                    <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
+                      {step.description}
+                    </p>
                   </div>
                 </AnimatedSection>
               ))}
             </div>
-            {/* Right - Parallax illustration */}
-            <motion.div
-              style={{ y: parallaxY }}
-              className="hidden lg:flex items-center justify-center sticky top-32"
-            >
-              <div className="w-full aspect-square rounded-2xl bg-primary/5 flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10" />
-                <div className="relative grid grid-cols-2 gap-6 p-12">
-                  {[Monitor, Palette, Bot, Settings].map((Icon, i) => (
-                    <motion.div
-                      key={i}
-                      initial={{ opacity: 0, scale: 0.8 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      transition={{ delay: i * 0.2, duration: 0.5 }}
-                      viewport={{ once: true }}
-                      className="w-28 h-28 rounded-2xl bg-card border border-border shadow-card flex items-center justify-center"
-                    >
-                      <Icon className="w-12 h-12 text-primary" />
-                    </motion.div>
-                  ))}
+            {/* Right - Heading + CTA */}
+            <div className="lg:sticky lg:top-32">
+              <AnimatedSection>
+                <h2 className="text-4xl sm:text-5xl md:text-7xl font-display font-bold text-foreground uppercase tracking-tight leading-[1.1] mb-8">
+                  Nuestro
+                  <br />
+                  <span className="text-gradient">Proceso</span>
+                </h2>
+                <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-10 max-w-md">
+                  Nuestro credo se resume en cuatro palabras: hacemos más, hablamos menos. Una vez que te conocemos a fondo y construimos la estrategia perfecta, entregamos resultados que hablan por sí solos.
+                </p>
+                <div className="flex items-center gap-3">
+                  <Button asChild size="lg">
+                    <a href="https://wa.me/6145154240?text=Hola%20LUMA%2C%20me%20interesa%20conocer%20más%20sobre%20sus%20servicios" target="_blank" rel="noopener noreferrer">
+                      Te Mostramos Cómo
+                    </a>
+                  </Button>
+                  <Button asChild size="lg" variant="outline" className="rounded-full w-12 h-12 p-0">
+                    <a href="https://wa.me/6145154240?text=Hola%20LUMA%2C%20me%20interesa%20conocer%20más%20sobre%20sus%20servicios" target="_blank" rel="noopener noreferrer">
+                      <ArrowRight className="w-5 h-5" />
+                    </a>
+                  </Button>
                 </div>
-              </div>
-            </motion.div>
+              </AnimatedSection>
+            </div>
           </div>
-          <AnimatedSection className="mt-14">
-            <Button asChild>
-              <a href="https://wa.me/526145154240" target="_blank" rel="noopener noreferrer">
-                Te Mostramos Cómo <ArrowRight className="ml-2 w-4 h-4" />
-              </a>
-            </Button>
-          </AnimatedSection>
         </div>
       </section>
 
