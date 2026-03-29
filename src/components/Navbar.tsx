@@ -84,7 +84,7 @@ const Navbar = () => {
               ))}
               <div className="pt-4">
                 <Button asChild className="w-full">
-                  <a href="https://wa.me/521234567890" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/526145154240?text=Hola%20te%20escribo%20porque%20me%20interesa%20saber%20m%C3%A1s" target="_blank" rel="noopener noreferrer">
                     Hablemos
                   </a>
                 </Button>

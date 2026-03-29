@@ -364,9 +364,9 @@ const Index = () => {
                 </a>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-secondary-foreground/30 text-secondary-foreground hover:bg-secondary-foreground/10">
-                <Link to="/contacto">
+                <a href="https://wa.me/526145154240?text=Hola%20te%20escribo%20porque%20me%20interesa%20saber%20m%C3%A1s" target="_blank" rel="noopener noreferrer">
                   Enviar Mensaje
-                </Link>
+                </a>
               </Button>
             </div>
           </AnimatedSection>

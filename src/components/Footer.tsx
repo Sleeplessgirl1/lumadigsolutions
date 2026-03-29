@@ -63,7 +63,7 @@ const Footer = () => {
               <a href="mailto:hola@lumadigital.mx" className="flex items-center gap-3 text-lg font-display font-bold text-background hover:text-primary transition-colors duration-200">
                 <Mail className="w-5 h-5" />hola@lumadigital.mx
               </a>
-              <a href="tel:+526145154240" className="flex items-center gap-3 text-lg font-display font-bold text-background hover:text-primary transition-colors duration-200">
+              <a href="https://wa.me/526145154240?text=Hola%20te%20escribo%20porque%20me%20interesa%20saber%20m%C3%A1s" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-lg font-display font-bold text-background hover:text-primary transition-colors duration-200">
                 <Phone className="w-5 h-5" /> +52 (614) 515-4240
               </a>
               <div className="flex items-start gap-3 text-sm text-background/60">
