@@ -248,20 +248,20 @@ export const teamMembers = [
   {
     name: "Jacqueline R.",
     role: "Fundador & Developer",
-    bio: "Experiencia en desarrollo web y estrategia digital. Apasionado por crear experiencias que transforman negocios.",
-    specialties: ["Estrategia Digital", "UX/UI", "Liderazgo"],
+    bio: "Experiencia en desarrollo web y estrategia digital. \nDesde la conceptualización técnica hasta el deployment.",
+    specialties: ["Estrategia Digital", "UX/UI", "Desarrollo"],
   },
   {
     name: "Itzel R.",
     role: "Fundador & Dirección",
     bio: "Experiencia en dirección estratégica y gestión empresarial. Apasionada por crear estrategias que transforman negocios.",
-    specialties: ["React", "Node.js", "Cloud"],
+    specialties: ["Liderazgo", "Finanzas", "Branding"],
   },
   {
     name: "Óscar G.",
     role: "Director de Diseño & Producción ",
     bio: "Diseñador gráfico especializado en crear identidades visuales que conectan marcas con sus audiencias de forma estratégica. ",
-    specialties: ["Branding", "Ilustración", "Motion"],
+    specialties: ["Social Media", "Ilustración", "Video Production"],
   },
   {
     name: "Valentina Ruiz",

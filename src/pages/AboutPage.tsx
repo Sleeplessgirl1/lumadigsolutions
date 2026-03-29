@@ -103,10 +103,10 @@ const AboutPage = () => {
           </AnimatedSection>
           <div className="space-y-10">
             {[
-              { year: "2024", event: "Fundación de LUMA Digital Solutions en Ciudad de México" },
-              { year: "2024", event: "Primeros 10 clientes y lanzamiento de servicios de IA" },
-              { year: "2025", event: "Expansión a toda Latinoamérica y +50 proyectos completados" },
-              { year: "2025", event: "Alianzas estratégicas con empresas de tecnología" },
+              { year: "2025", event: "Fundación de Luma Solutions." },
+              { year: "2026", event: "Primeros 10 clientes y lanzamiento de servicios de IA" },
+              { year: "2025", event: "Alianza estratégica con Productores de Video" },
+              { year: "2027", event: "Impacto en todo México" },
             ].map((item, i) => (
               <AnimatedSection key={i} delay={i * 0.1}>
                 <div className="flex gap-6">
