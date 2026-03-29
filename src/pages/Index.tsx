@@ -25,8 +25,8 @@ const Index = () => {
         </div>
         <div className="relative container mx-auto px-4 sm:px-6 text-center pt-20">
           <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: -80 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <span className="inline-block font-bold uppercase tracking-[0.2em] text-primary mb-8 text-xl">
