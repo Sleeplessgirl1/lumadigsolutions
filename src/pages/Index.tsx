@@ -43,7 +43,7 @@ const Index = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mx-[11px] px-0">
               <Button asChild size="lg">
-                <a href="https://wa.me/6145154240?text=Hola%20LUMA%2C%20me%20interesa%20conocer%20más%20sobre%20sus%20servicios">
+                <a href="https://wa.me/6145154240?text=Hola%20LUMA%2C%20me%20interesa%20conocer%20más%20sobre%20sus%20servicios" className="border border-secondary font-sans">
                   Comienza Ahora <ArrowRight className="ml-2 w-4 h-4" />
                 </a>
               </Button>
@@ -86,8 +86,8 @@ const Index = () => {
               const Icon = iconMap[service.icon];
               return (
                 <AnimatedSection key={service.id} delay={i * 0.1}>
-                  <div className="card-colab h-full text-center">
-                    <div className="w-14 h-14 rounded-xl bg-primary/10 mb-6 shadow-sm flex items-center justify-center">
+                  <div className="card-colab h-full text-left rounded-xl opacity-100 border border-secondary">
+                    <div className="w-14 h-14 rounded-xl bg-primary/10 mb-6 shadow-sm flex-row flex items-center justify-center border border-popover-foreground">
                       <Icon className="w-7 h-7 text-primary" />
                     </div>
                     <h3 className="font-display font-bold text-lg text-foreground uppercase tracking-wide mb-4">{service.title}</h3>
