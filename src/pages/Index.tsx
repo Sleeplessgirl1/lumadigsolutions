@@ -86,8 +86,8 @@ const Index = () => {
               const Icon = iconMap[service.icon];
               return (
                 <AnimatedSection key={service.id} delay={i * 0.1}>
-                  <div className="card-colab h-full text-center">
-                    <div className="w-14 h-14 rounded-xl bg-primary/10 mb-6 shadow-sm flex items-center justify-center">
+                  <div className="card-colab h-full text-left rounded-xl opacity-100 border border-secondary">
+                    <div className="w-14 h-14 rounded-xl bg-primary/10 mb-6 shadow-sm flex-row flex items-center justify-center border border-popover-foreground">
                       <Icon className="w-7 h-7 text-primary" />
                     </div>
                     <h3 className="font-display font-bold text-lg text-foreground uppercase tracking-wide mb-4">{service.title}</h3>
