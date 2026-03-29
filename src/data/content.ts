@@ -22,7 +22,7 @@ export const services = [
     icon: "Palette",
     title: "Branding & Publicidad",
     description: "Identidad visual que comunica tu marca. Logos, colores, manuales.",
-    subServices: ["Logo", "Paleta", "Manual de Marca", "Creativos"],
+    subServices: ["Logo", "Paleta", "Manual de Marca", "Generación de contenido"],
     longDescription: "Tu marca es tu historia. Diseñamos identidades visuales que conectan con tu audiencia y transmiten profesionalismo. Desde el logo hasta el manual de marca completo, creamos sistemas visuales coherentes que destacan en cualquier medio.",
     features: ["Diseño de logo profesional", "Paleta de colores estratégica", "Tipografía personalizada", "Manual de marca completo", "Papelería corporativa", "Templates para redes sociales"],
     priceRange: "$300 - $3,000 USD",
