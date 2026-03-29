@@ -104,7 +104,7 @@ const Index = () => {
           </div>
           <AnimatedSection className="mt-14 mx-0 text-center">
             <Button asChild>
-              <Link to="/servicios">Somos Muy Talentosos <ArrowRight className="ml-2 w-4 h-4" /></Link>
+              <Link to="/servicios">Somos Muy Talentosos <X className="ml-2 w-4 h-4 text-[#8249df]" /></Link>
             </Button>
           </AnimatedSection>
         </div>
