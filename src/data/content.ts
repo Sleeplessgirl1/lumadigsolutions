@@ -246,21 +246,21 @@ export const pricingPlans = [
 
 export const teamMembers = [
   {
-    name: "Diego Ramírez",
-    role: "Fundador & Director Creativo",
-    bio: "10+ años en desarrollo web y estrategia digital. Apasionado por crear experiencias que transforman negocios.",
+    name: "Jacqueline R.",
+    role: "Fundador & Developer",
+    bio: "Experiencia en desarrollo web y estrategia digital. Apasionado por crear experiencias que transforman negocios.",
     specialties: ["Estrategia Digital", "UX/UI", "Liderazgo"],
   },
   {
-    name: "Sofía Torres",
-    role: "Lead Developer",
-    bio: "Ingeniera de software con experiencia en startups y empresas Fortune 500. Experta en React y arquitecturas escalables.",
+    name: "Itzel R.",
+    role: "Fundador & Dirección",
+    bio: "Experiencia en dirección estratégica y gestión empresarial. Apasionada por crear estrategias que transforman negocios.",
     specialties: ["React", "Node.js", "Cloud"],
   },
   {
-    name: "Miguel Ángel Cruz",
-    role: "Director de Branding",
-    bio: "Diseñador gráfico con ojo para los detalles. Ha creado identidades visuales para más de 50 marcas en Latinoamérica.",
+    name: "Óscar G.",
+    role: "Director de Diseño & Producción ",
+    bio: "Diseñador gráfico especializado en crear identidades visuales que conectan marcas con sus audiencias de forma estratégica. ",
     specialties: ["Branding", "Ilustración", "Motion"],
   },
   {
