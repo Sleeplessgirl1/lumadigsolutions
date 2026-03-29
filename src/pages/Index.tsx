@@ -248,7 +248,7 @@ const Index = () => {
                     variant={plan.highlighted ? "default" : "outline"}
                     className="w-full"
                   >
-                    <a href="https://wa.me/526145154240" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/526145154240?text=Hola%20te%20escribo%20porque%20me%20interesa%20saber%20m%C3%A1s" target="_blank" rel="noopener noreferrer">
                       {plan.cta}
                     </a>
                   </Button>
