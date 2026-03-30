@@ -363,15 +363,10 @@ const Index = () => {
             <p className="text-secondary-foreground/60 text-lg mb-12 max-w-xl mx-auto">
               Hablemos sobre tus objetivos. La primera consulta es gratis.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex justify-center">
               <Button asChild size="lg">
                 <a href="https://wa.me/526145154240?text=Hola%20te%20escribo%20porque%20me%20interesa%20saber%20m%C3%A1s" target="_blank" rel="noopener noreferrer">
-                  <Calendar className="mr-2 w-4 h-4" /> Agendar Consulta
-                </a>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="border-secondary-foreground/30 text-secondary-foreground hover:bg-secondary-foreground/10">
-                <a href="https://wa.me/526145154240?text=Hola%20te%20escribo%20porque%20me%20interesa%20saber%20m%C3%A1s" target="_blank" rel="noopener noreferrer">
-                  Enviar Mensaje
+                  Comienza Ahora — Agenda Consulta Gratis
                 </a>
               </Button>
             </div>
