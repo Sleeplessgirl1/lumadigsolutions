@@ -25,7 +25,7 @@ const Footer = () => {
           {/* Logo grande */}
           <div className="mb-12">
             <img
-              src="/lovable-uploads/36bdbf58-9bfb-4fce-bbda-550abde1acab.png"
+              src="/lovable-uploads/b4daeb4a-f0bd-47f2-a9c7-aa4203364c35.png"
               alt="LUMA Digital Solutions"
               className="h-24 sm:h-32 md:h-40 lg:h-48 w-auto object-contain"
             />
