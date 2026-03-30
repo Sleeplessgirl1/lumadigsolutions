@@ -72,7 +72,7 @@ const ServiceCard = ({ service, style, isActive }: { service: typeof services[0]
         x: isActive ? 0 : 80,
         rotateZ: isActive ? 0 : 3,
       }}
-      transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
       className={`absolute inset-0 ${style.bg} rounded-3xl overflow-hidden flex items-center ${isActive ? "pointer-events-auto" : "pointer-events-none"}`}
     >
       {/* Centered icon */}
