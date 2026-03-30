@@ -192,7 +192,7 @@ const Index = () => {
                 </p>
                 <div className="flex items-center gap-3">
                   <Button asChild size="lg">
-                    <a href="https://wa.me/526145154240?text=Hola%20te%20escribo%20porque%20me%20interesa%20saber%20m%C3%A1s" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/526145154240?text=Hola%20te%20escribo%20porque%20me%20interesa%20saber%20más" target="_blank" rel="noopener noreferrer">
                       Te Mostramos Cómo
                     </a>
                   </Button>
