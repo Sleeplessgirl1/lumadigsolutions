@@ -136,7 +136,7 @@ const ContactPage = () => {
                         if (node && !node.querySelector('iframe')) {
                           const iframe = document.createElement('iframe');
                           iframe.title = "Ubicación LUMA";
-                          iframe.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d240857.44994685427!2d-99.42677199999999!3d19.390519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0026db097507%3A0x54061076cda0e0!2sCiudad%20de%20M%C3%A9xico!5e0!3m2!1ses-419!2smx!4v1";
+                          iframe.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110988.91158974498!2d-106.14257705!3d28.6329957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea426a39e8c1ef%3A0x3b0dab8e1d7da10b!2sChihuahua%2C%20Chih.!5e0!3m2!1ses-419!2smx!4v1";
                           iframe.width = "100%";
                           iframe.height = "250";
                           iframe.style.border = "0";
