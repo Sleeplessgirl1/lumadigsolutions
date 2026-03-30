@@ -113,16 +113,16 @@ const ContactPage = () => {
                     <h3 className="font-display font-bold text-foreground uppercase tracking-wide mb-6">Información</h3>
                     <div className="space-y-5">
                       <a href="mailto:hola@lumadigital.mx" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary transition-colors">
-                        <Mail className="w-5 h-5 text-primary" /> hola@lumadigital.mx
+                        <Mail className="w-5 h-5 text-primary" />
                       </a>
-                      <a href="tel:+521234567890" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary transition-colors">
-                        <Phone className="w-5 h-5 text-primary" /> +52 (123) 456-7890
+                      <a href="tel:+526145154240" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary transition-colors">
+                        <Phone className="w-5 h-5 text-primary" /> +52 (614) 515-4240
                       </a>
-                      <a href="https://wa.me/521234567890" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary transition-colors">
+                      <a href="https://wa.me/526145154240" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary transition-colors">
                         <MessageCircle className="w-5 h-5 text-primary" /> WhatsApp
                       </a>
                       <div className="flex items-start gap-3 text-sm text-muted-foreground">
-                        <MapPin className="w-5 h-5 text-primary shrink-0" /> Ciudad de México, México
+                        <MapPin className="w-5 h-5 text-primary shrink-0" /> Chihuahua México
                       </div>
                       <div className="flex items-start gap-3 text-sm text-muted-foreground">
                         <Clock className="w-5 h-5 text-primary shrink-0" /> Lun - Vie: 9:00 - 18:00 CST
