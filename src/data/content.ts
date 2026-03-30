@@ -197,6 +197,7 @@ export const blogPosts = [
     date: "2025-03-01",
     author: "LUMA Team",
     readTime: "6 min",
+    image: "/src/assets/blog-seo.jpg",
     excerpt: "Mejora tu posicionamiento en Google con estas estrategias probadas. Desde optimización on-page hasta link building efectivo para empresas mexicanas.",
     content: "El SEO es la base de cualquier estrategia digital exitosa...",
   },
