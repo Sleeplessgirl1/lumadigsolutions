@@ -81,7 +81,7 @@ const Index = () => {
               Soluciones integrales para llevar tu negocio al siguiente nivel
             </p>
           </AnimatedSection>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="flex overflow-x-auto gap-6 pb-4 -mx-4 px-4 snap-x snap-mandatory scrollbar-hide">
             {services.map((service, i) => {
               const Icon = iconMap[service.icon];
               return (
