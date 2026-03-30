@@ -43,9 +43,14 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:flex items-center">
-            <Button asChild size="sm">
-              <a href="https://wa.me/526145154240?text=Hola%20te%20escribo%20porque%20me%20interesa%20saber%20m%C3%A1s" target="_blank" rel="noopener noreferrer">
-                Hablemos
+            <Button asChild size="sm" className="overflow-hidden">
+              <a href="https://wa.me/526145154240?text=Hola%20te%20escribo%20porque%20me%20interesa%20saber%20m%C3%A1s" target="_blank" rel="noopener noreferrer" className="group relative">
+                <span className="inline-block transition-transform duration-300 group-hover:-translate-y-full group-hover:opacity-0">
+                  Hablemos
+                </span>
+                <span className="absolute inset-0 flex items-center justify-center translate-y-full opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                  614 515 4240
+                </span>
               </a>
             </Button>
           </div>
