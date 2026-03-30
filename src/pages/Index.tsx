@@ -204,6 +204,7 @@ const Index = () => {
                     </a>
                   </Button>
                 </div>
+                <SacredGeometry />
               </AnimatedSection>
             </div>
           </div>
