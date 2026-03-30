@@ -69,7 +69,7 @@ export const services = [
     subServices: ["Render arquitectónico", "Render de producto", "Animación 3D", "Recorridos virtuales"],
     longDescription: "Creamos renders fotorrealistas y animaciones 3D que dan vida a tus proyectos antes de construirlos. Desde visualización arquitectónica hasta renders de producto para e-commerce, transformamos ideas en imágenes impactantes que venden.",
     features: ["Renders fotorrealistas", "Visualización arquitectónica", "Renders de producto", "Recorridos virtuales 360°", "Postproducción profesional"],
-    priceRange: "$500 - $10,000 USD",
+    priceRange: "",
     deliveryTime: "1-6 semanas",
   },
 ];
