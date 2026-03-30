@@ -23,13 +23,6 @@ const Footer = () => {
       <div className="bg-gradient-to-b from-primary/90 to-primary/70 py-16 md:py-24">
         <div className="container mx-auto px-4 sm:px-6">
           {/* Logo grande */}
-          <div className="mb-12">
-            <img
-              src="/lovable-uploads/b4daeb4a-f0bd-47f2-a9c7-aa4203364c35.png"
-              alt="LUMA Digital Solutions"
-              className="h-24 sm:h-32 md:h-40 lg:h-48 w-auto object-contain"
-            />
-          </div>
 
           <div className="flex flex-col items-start gap-6">
             <a
