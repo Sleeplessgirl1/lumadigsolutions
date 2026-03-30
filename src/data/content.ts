@@ -110,7 +110,7 @@ export const portfolioItems = [
   },
   {
     id: "4",
-    title: "AsistenteBot",
+    title: "Asistente Bot",
     category: "IA",
     description: "Chatbot con IA para atención al cliente 24/7. +10,000 conversaciones mensuales.",
     image: portfolio4,
