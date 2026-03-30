@@ -105,7 +105,7 @@ const ServiceCard = ({ service, style, isActive }: { service: typeof services[0]
             {service.title}
           </h2>
 
-          <p className={`${style.mutedColor} text-sm sm:text-base leading-relaxed mb-6 max-w-lg`}>
+          <p className={`${style.mutedColor} text-xs sm:text-base leading-relaxed mb-4 sm:mb-6 max-w-lg line-clamp-3 sm:line-clamp-none`}>
             {service.longDescription}
           </p>
 
