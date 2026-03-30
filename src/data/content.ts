@@ -208,6 +208,7 @@ export const blogPosts = [
     date: "2025-02-20",
     author: "LUMA Team",
     readTime: "7 min",
+    image: "/src/assets/blog-ia.jpg",
     excerpt: "La inteligencia artificial ya no es ciencia ficción. Conoce casos reales de empresas mexicanas que están usando IA para crecer y automatizar procesos.",
     content: "La adopción de IA en empresas mexicanas ha crecido un 300% en el último año...",
   },
