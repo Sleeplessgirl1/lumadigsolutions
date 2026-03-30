@@ -132,7 +132,7 @@ export const portfolioItems = [
   },
   {
     id: "6",
-    title: "ERP Industrial",
+    title: "CATÁLOGO DIGITAL",
     category: "Software",
     description: "Sistema ERP completo para gestión de inventarios, ventas y producción.",
     image: portfolio6,
