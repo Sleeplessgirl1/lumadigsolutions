@@ -97,7 +97,7 @@ const ServiceCard = ({ service, style, isActive }: { service: typeof services[0]
           y: isActive ? 0 : 30,
           opacity: isActive ? 1 : 0,
         }}
-        transition={{ duration: 0.5, ease: "easeOut", delay: isActive ? 0.2 : 0 }}
+        transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: isActive ? 0.35 : 0 }}
         className="relative z-10 px-6 sm:px-10 md:px-14 py-10 md:py-14 w-full"
       >
         <div className="max-w-2xl">
