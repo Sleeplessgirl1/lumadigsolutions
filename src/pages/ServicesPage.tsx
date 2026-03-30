@@ -40,6 +40,22 @@ const sectionStyles = [
     iconColor: "text-white/15",
     watermarkColor: "text-white/10",
   },
+  {
+    bg: "bg-[hsl(15,80%,50%)]",
+    textColor: "text-white",
+    mutedColor: "text-white/70",
+    watermark: "PRODUCCIÓN",
+    iconColor: "text-white/15",
+    watermarkColor: "text-white/10",
+  },
+  {
+    bg: "bg-[hsl(199,89%,48%)]",
+    textColor: "text-white",
+    mutedColor: "text-white/70",
+    watermark: "RENDERS",
+    iconColor: "text-white/15",
+    watermarkColor: "text-white/10",
+  },
 ];
 
 const ServicesPage = () => {
