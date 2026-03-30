@@ -186,6 +186,7 @@ export const blogPosts = [
     date: "2025-03-15",
     author: "LUMA Team",
     readTime: "8 min",
+    image: "/src/assets/blog-ecommerce.jpg",
     excerpt: "Descubre los pasos esenciales para crear una tienda online exitosa. Desde la elección de plataforma hasta estrategias de marketing digital que funcionan.",
     content: "El comercio electrónico sigue creciendo a ritmos exponenciales en Latinoamérica...",
   },

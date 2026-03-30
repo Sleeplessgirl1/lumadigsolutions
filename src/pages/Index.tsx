@@ -317,7 +317,13 @@ const Index = () => {
               <AnimatedSection key={post.slug} delay={i * 0.1}>
                 <Link to={`/blog/${post.slug}`} className="group block">
                   <div className="rounded-lg border border-border bg-card overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:border-primary hover:shadow-card-hover h-full">
-                    <div className="h-48 bg-gradient-dark" />
+                    <div className="h-48 overflow-hidden">
+                      {post.image ? (
+                        <img src={post.image} alt={post.title} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+                      ) : (
+                        <div className="h-full bg-gradient-dark" />
+                      )}
+                    </div>
                     <div className="p-8">
                       <span className="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-primary/10 text-primary">{post.category}</span>
                       <h3 className="font-display font-bold text-foreground mt-4 mb-3 group-hover:text-primary transition-colors text-lg">
