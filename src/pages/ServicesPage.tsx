@@ -84,7 +84,7 @@ const ServiceCard = ({ service, style, isActive }: { service: typeof services[0]
             opacity: isActive ? 0.15 : 0,
             rotate: isActive ? 0 : -15,
           }}
-          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: isActive ? 0.15 : 0 }}
+          transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1], delay: isActive ? 0.25 : 0 }}
         >
           <Icon className={`w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 ${style.textColor}`} strokeWidth={0.8} />
         </motion.div>
