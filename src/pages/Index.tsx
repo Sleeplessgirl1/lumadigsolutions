@@ -31,21 +31,41 @@ const Index = () => {
       >
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-primary/10 blur-[150px]" />
-          {/* Interactive floating icon */}
+          {/* Interactive floating icons */}
           <motion.div
             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
-            animate={{
-              rotate: [0, 360],
-            }}
-            transition={{
-              rotate: { duration: 60, repeat: Infinity, ease: "linear" },
-            }}
-            style={{
-              translateX: 'var(--hero-mx, 0px)',
-              translateY: 'var(--hero-my, 0px)',
-            }}
+            animate={{ rotate: [0, 360] }}
+            transition={{ rotate: { duration: 60, repeat: Infinity, ease: "linear" } }}
+            style={{ translateX: 'var(--hero-mx, 0px)', translateY: 'var(--hero-my, 0px)' }}
           >
             <Bot className="w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px] text-primary/[0.07]" strokeWidth={0.5} />
+          </motion.div>
+
+          <motion.div
+            className="absolute top-[20%] left-[15%] pointer-events-none"
+            animate={{ rotate: [0, -360], y: [0, -20, 0] }}
+            transition={{ rotate: { duration: 45, repeat: Infinity, ease: "linear" }, y: { duration: 6, repeat: Infinity, ease: "easeInOut" } }}
+            style={{ translateX: 'var(--hero-mx, 0px)', translateY: 'var(--hero-my, 0px)' }}
+          >
+            <Monitor className="w-[120px] h-[120px] sm:w-[180px] sm:h-[180px] text-accent/[0.08]" strokeWidth={0.6} />
+          </motion.div>
+
+          <motion.div
+            className="absolute bottom-[25%] right-[10%] pointer-events-none"
+            animate={{ rotate: [0, 360], scale: [1, 1.1, 1] }}
+            transition={{ rotate: { duration: 50, repeat: Infinity, ease: "linear" }, scale: { duration: 8, repeat: Infinity, ease: "easeInOut" } }}
+            style={{ translateX: 'var(--hero-mx, 0px)', translateY: 'var(--hero-my, 0px)' }}
+          >
+            <Palette className="w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] text-secondary/[0.08]" strokeWidth={0.6} />
+          </motion.div>
+
+          <motion.div
+            className="absolute top-[30%] right-[20%] pointer-events-none"
+            animate={{ rotate: [0, -360], x: [0, 15, 0] }}
+            transition={{ rotate: { duration: 70, repeat: Infinity, ease: "linear" }, x: { duration: 7, repeat: Infinity, ease: "easeInOut" } }}
+            style={{ translateX: 'var(--hero-mx, 0px)', translateY: 'var(--hero-my, 0px)' }}
+          >
+            <Settings className="w-[80px] h-[80px] sm:w-[120px] sm:h-[120px] text-primary/[0.05]" strokeWidth={0.6} />
           </motion.div>
         </div>
         <div className="relative container mx-auto px-4 sm:px-6 text-center pt-20">
