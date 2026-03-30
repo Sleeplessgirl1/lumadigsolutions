@@ -6,7 +6,7 @@ import { useRef } from "react";
 import AnimatedSection from "@/components/AnimatedSection";
 import { services, portfolioItems, processSteps, pricingPlans, testimonials, blogPosts } from "@/data/content";
 
-const iconMap: Record<string, React.ElementType> = { Monitor, Palette, Bot, Settings };
+const iconMap: Record<string, React.ElementType> = { Monitor, Palette, Bot, Settings, Video, Box };
 
 const Index = () => {
   const processRef = useRef<HTMLDivElement>(null);
