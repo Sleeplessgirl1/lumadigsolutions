@@ -73,7 +73,7 @@ const ServiceCard = ({ service, style, isActive }: { service: typeof services[0]
         rotateZ: isActive ? 0 : 3,
       }}
       transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-      className={`absolute inset-2 sm:inset-0 ${style.bg} rounded-3xl overflow-hidden overflow-y-auto flex items-start sm:items-center ${isActive ? "pointer-events-auto" : "pointer-events-none"}`}
+      className={`absolute inset-2 sm:inset-0 ${style.bg} rounded-3xl overflow-hidden overflow-y-auto flex items-start sm:items-center ${isActive ? "pointer-events-auto" : "pointer-events-none"} py-0 px-0 mx-0 mr-[14px]`}
     >
       {/* Centered icon */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
