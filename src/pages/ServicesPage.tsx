@@ -110,7 +110,7 @@ const ServiceCard = ({ service, style, isActive }: { service: typeof services[0]
           </p>
 
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-6">
-            {service.features.map((f) => (
+            {service.features.filter(f => f.trim()).map((f) => (
               <li key={f} className={`flex items-start gap-2 text-xs sm:text-sm ${style.textColor}`}>
                 <Check className="w-3.5 h-3.5 mt-0.5 shrink-0 opacity-80" /> {f}
               </li>
