@@ -67,28 +67,39 @@ const ServiceCard = ({ service, style, isActive }: { service: typeof services[0]
       initial={false}
       animate={{
         opacity: isActive ? 1 : 0,
-        scale: isActive ? 1 : 0.92,
-        y: isActive ? 0 : 40,
+        scale: isActive ? 1 : 0.88,
+        y: isActive ? 0 : -60,
+        x: isActive ? 0 : 80,
+        rotateZ: isActive ? 0 : 3,
       }}
-      transition={{ duration: 0.5, ease: "easeOut" }}
+      transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       className={`absolute inset-0 ${style.bg} rounded-3xl overflow-hidden flex items-center ${isActive ? "pointer-events-auto" : "pointer-events-none"}`}
     >
-      {/* Large watermark text */}
+      {/* Centered icon */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
-        <span className={`font-display font-black uppercase text-[12vw] md:text-[10vw] leading-none ${style.watermarkColor} whitespace-nowrap`}>
-          {style.watermark}
-        </span>
-      </div>
-
-      {/* 3D-style icon */}
-      <div className="absolute right-[8%] top-1/2 -translate-y-1/2 hidden lg:flex items-center justify-center">
-        <div className={`w-52 h-52 xl:w-64 xl:h-64 rounded-3xl ${style.iconColor} backdrop-blur-sm flex items-center justify-center`}>
-          <Icon className={`w-32 h-32 xl:w-40 xl:h-40 ${style.textColor} opacity-30`} strokeWidth={1} />
-        </div>
+        <motion.div
+          initial={false}
+          animate={{
+            scale: isActive ? 1 : 0.6,
+            opacity: isActive ? 0.15 : 0,
+            rotate: isActive ? 0 : -15,
+          }}
+          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: isActive ? 0.15 : 0 }}
+        >
+          <Icon className={`w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 ${style.textColor}`} strokeWidth={0.8} />
+        </motion.div>
       </div>
 
       {/* Content */}
-      <div className="relative z-10 px-6 sm:px-10 md:px-14 py-10 md:py-14 w-full">
+      <motion.div
+        initial={false}
+        animate={{
+          y: isActive ? 0 : 30,
+          opacity: isActive ? 1 : 0,
+        }}
+        transition={{ duration: 0.5, ease: "easeOut", delay: isActive ? 0.2 : 0 }}
+        className="relative z-10 px-6 sm:px-10 md:px-14 py-10 md:py-14 w-full"
+      >
         <div className="max-w-2xl">
           <h2 className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-black uppercase tracking-tight ${style.textColor} mb-4 leading-[0.95]`}>
             {service.title}
@@ -125,7 +136,7 @@ const ServiceCard = ({ service, style, isActive }: { service: typeof services[0]
             </a>
           </Button>
         </div>
-      </div>
+      </motion.div>
     </motion.div>
   );
 };
