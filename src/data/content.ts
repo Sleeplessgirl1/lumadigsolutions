@@ -299,23 +299,23 @@ export const teamMembers = [
 export const processSteps = [
   {
     number: "01",
-    title: "Escucha",
-    description: "Entendemos tu negocio, tu visión, tu mercado.",
+    title: "\u200BAPRENDER SOBRE TI",
+    description: "Piensa en esto como una terapia de marca, donde nos cuentas todo sobre tu empresa, hacia d\u00F3nde se dirige y qu\u00E9 no ha funcionado en el pasado. Este proceso puede durar todo el tiempo que sea necesario para que entendamos qu\u00E9 es lo que te motiva.",
   },
   {
     number: "02",
-    title: "Estrategia",
-    description: "Diseñamos la ruta: tech, design, marketing.",
+    title: "CREAR EL PLAN DE JUEGO ",
+    description: "Una vez que te ayudamos a definir tus objetivos, creamos la mejor estrategia posible que se adapte a tu presupuesto y cronograma. Nos aseguraremos de que haya suficiente margen de maniobra para giros de \u00FAltimo momento, para que siempre se sienta como t\u00FA.",
   },
   {
     number: "03",
-    title: "Ejecución",
-    description: "Hacemos. Rápido, bien, sin excusas.",
+    title: "HACER QUE LAS COSAS SUCEDAN",
+    description: "Aqu\u00ED es donde empieza la diversi\u00F3n. Nuestros expertos tomar\u00E1n las riendas y se pondr\u00E1n manos a la obra, manteni\u00E9ndote informado durante todo el camino. Siempre tendr\u00E1s nuestra total atenci\u00F3n, sin excusas.",
   },
   {
     number: "04",
-    title: "Optimización",
-    description: "Medimos, mejoramos, escalamos.",
+    title: "OPTIMIZAR + REPETIR",
+    description: "Una vez que lanzamos, seguimos con manos a la obra. Nuestro equipo rastrear\u00E1 el rendimiento, informar\u00E1 nuestros hallazgos y aprovechar\u00E1 cada oportunidad para mejorar las cosas, para que puedas relajarte y ver crecer tus n\u00FAmeros.",
   },
 ];
 
