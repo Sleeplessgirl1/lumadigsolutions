@@ -216,9 +216,9 @@ const Index = () => {
               Planes para Todos
             </h2>
           </AnimatedSection>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="flex overflow-x-auto gap-6 pb-4 -mx-4 px-4 snap-x snap-mandatory scrollbar-hide md:grid md:grid-cols-3 md:overflow-visible md:mx-0 md:px-0 md:pb-0 md:gap-8 max-w-5xl md:mx-auto">
             {pricingPlans.map((plan, i) => (
-              <AnimatedSection key={plan.name} delay={i * 0.1}>
+              <AnimatedSection key={plan.name} delay={i * 0.1} className="min-w-[280px] snap-start flex-shrink-0 md:min-w-0 md:flex-shrink">
                 <div className={`p-10 rounded-lg border h-full flex flex-col transition-all duration-300 hover:scale-[1.02] ${
                   plan.highlighted
                     ? "border-primary bg-card shadow-glow"
