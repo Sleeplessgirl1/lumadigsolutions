@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, ArrowRight, Monitor, Palette, Bot, Settings, Star, Check, Calendar, ChevronRight, X, Video, Box } from "lucide-react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, useMotionValue, useSpring } from "framer-motion";
 import { Link } from "react-router-dom";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import AnimatedSection from "@/components/AnimatedSection";
 import { services, portfolioItems, processSteps, pricingPlans, testimonials, blogPosts } from "@/data/content";
 
