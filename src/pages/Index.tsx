@@ -19,9 +19,34 @@ const Index = () => {
   return (
     <div className="overflow-hidden">
       {/* HERO */}
-      <section className="relative min-h-screen flex items-center justify-center bg-primary/5">
+      <section
+        className="relative min-h-screen flex items-center justify-center bg-primary/5"
+        onMouseMove={(e) => {
+          const rect = e.currentTarget.getBoundingClientRect();
+          const x = (e.clientX - rect.left) / rect.width - 0.5;
+          const y = (e.clientY - rect.top) / rect.height - 0.5;
+          document.documentElement.style.setProperty('--hero-mx', `${x * 40}px`);
+          document.documentElement.style.setProperty('--hero-my', `${y * 40}px`);
+        }}
+      >
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-primary/10 blur-[150px]" />
+          {/* Interactive floating icon */}
+          <motion.div
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+            animate={{
+              rotate: [0, 360],
+            }}
+            transition={{
+              rotate: { duration: 60, repeat: Infinity, ease: "linear" },
+            }}
+            style={{
+              translateX: 'var(--hero-mx, 0px)',
+              translateY: 'var(--hero-my, 0px)',
+            }}
+          >
+            <Bot className="w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px] text-primary/[0.07]" strokeWidth={0.5} />
+          </motion.div>
         </div>
         <div className="relative container mx-auto px-4 sm:px-6 text-center pt-20">
           <motion.div
