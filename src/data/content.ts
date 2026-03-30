@@ -13,7 +13,7 @@ export const services = [
     description: "Sitios, tiendas online, portales. Diseño responsive, rápido, SEO-ready.",
     subServices: ["Emprendedor", "PYMES", "E-commerce", "Portales"],
     longDescription: "Creamos sitios web modernos, rápidos y optimizados para SEO. Desde landing pages hasta plataformas complejas de e-commerce, nuestro equipo desarrolla soluciones web que convierten visitantes en clientes. Usamos las últimas tecnologías como React, Next.js y Tailwind CSS para garantizar rendimiento excepcional.",
-    features: ["Diseño responsive mobile-first", "Optimización SEO avanzada", "Integración con CMS", "SSL y seguridad", "Velocidad de carga <2s", "Analíticas integradas"],
+    features: ["Diseño responsive mobile-first", "Optimización SEO avanzada", "Integración con CMS", "SSL y seguridad", ""],
     priceRange: "$500 - $5,000 USD",
     deliveryTime: "2-8 semanas",
   },

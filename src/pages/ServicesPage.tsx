@@ -100,8 +100,8 @@ const ServiceCard = ({ service, style, isActive }: { service: typeof services[0]
         transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: isActive ? 0.35 : 0 }}
         className="relative z-10 px-6 sm:px-10 md:px-14 py-10 md:py-14 w-full"
       >
-        <div className="max-w-2xl">
-          <h2 className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-black uppercase tracking-tight ${style.textColor} mb-4 leading-[0.95]`}>
+        <div className="max-w-2xl py-0 mb-[43px]">
+          <h2 className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-black uppercase tracking-tight ${style.textColor} mb-4 leading-[0.95] py-0 my-[44px]`}>
             {service.title}
           </h2>
 
@@ -117,7 +117,7 @@ const ServiceCard = ({ service, style, isActive }: { service: typeof services[0]
             ))}
           </ul>
 
-          <div className={`flex flex-wrap gap-6 text-xs sm:text-sm ${style.mutedColor} mb-6`}>
+          <div className={`flex flex-wrap gap-6 text-xs sm:text-sm ${style.mutedColor} mb-6 my-0 py-0`}>
             <div>
               <strong className={`${style.textColor} font-display`}>Precio:</strong> {service.priceRange}
             </div>
