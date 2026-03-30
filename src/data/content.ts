@@ -47,7 +47,7 @@ export const services = [
     subServices: ["Backend", "Frontend", "APIs", "Testing"],
     longDescription: "Desarrollamos software personalizado que se adapta exactamente a las necesidades de tu negocio. Desde APIs robustas hasta aplicaciones empresariales completas, construimos soluciones escalables con las mejores prácticas de ingeniería de software.",
     features: ["Arquitectura escalable", "APIs REST y GraphQL", "Bases de datos optimizadas", "Testing automatizado", "Documentación técnica", "Soporte y mantenimiento"],
-    priceRange: "$2,000 - $20,000 USD",
+    priceRange: "",
     deliveryTime: "4-16 semanas",
   },
   {
