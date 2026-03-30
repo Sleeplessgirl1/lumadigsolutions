@@ -171,7 +171,7 @@ const SacredGeometry = () => {
   return (
     <canvas
       ref={canvasRef}
-      className="w-full h-64 md:h-80 mt-8 opacity-100 rounded-md"
+      className="w-full h-[32rem] md:h-[40rem] mt-8 opacity-100 rounded-md"
       style={{ touchAction: "none" }}
     />
   );
