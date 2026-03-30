@@ -44,7 +44,13 @@ const BlogPost = () => {
           <AnimatedSection>
             <div className="prose prose-lg max-w-none text-foreground">
               <p className="text-lg text-muted-foreground leading-relaxed">{post.excerpt}</p>
-              <p className="text-muted-foreground leading-relaxed mt-6">{post.content}</p>
+              {post.content.split('\n\n').map((paragraph, i) => (
+                <div key={i} className="mt-6">
+                  {paragraph.split('\n').map((line, j) => (
+                    <p key={j} className="text-muted-foreground leading-relaxed">{line}</p>
+                  ))}
+                </div>
+              ))}
               <p className="text-muted-foreground leading-relaxed mt-6">
                 Este artículo fue escrito por el equipo de LUMA Digital Solutions. Si te interesa saber más sobre cómo implementar estas estrategias en tu negocio, no dudes en contactarnos para una consulta gratuita.
               </p>
