@@ -24,10 +24,12 @@ const Footer = () => {
         <div className="container mx-auto px-4 sm:px-6">
           <div className="flex flex-col items-start gap-6">
             <a
-              href="mailto:hola@lumadigital.mx"
+              href="https://instagram.com/lumadigsolutions"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-3xl sm:text-5xl md:text-6xl font-display font-black text-foreground uppercase tracking-tight hover:opacity-70 transition-opacity"
             >
-              hola@lumadigital.mx
+              @lumadigsolutions
             </a>
             <a
               href="https://wa.me/526145154240?text=Hola%20te%20escribo%20porque%20me%20interesa%20saber%20m%C3%A1s"
