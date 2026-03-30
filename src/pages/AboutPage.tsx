@@ -1,6 +1,6 @@
 import AnimatedSection from "@/components/AnimatedSection";
 import { teamMembers, processSteps } from "@/data/content";
-import { Target, Eye, Heart, Sparkles } from "lucide-react";
+import { Target, Eye, Heart, Sparkles, Rocket, Users, Handshake, Globe } from "lucide-react";
 
 const values = [
   { icon: Target, title: "Excelencia", desc: "No nos conformamos con lo bueno. Buscamos lo excepcional." },
