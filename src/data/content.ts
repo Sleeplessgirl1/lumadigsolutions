@@ -286,7 +286,7 @@ export const teamMembers = [
     specialties: ["Social Media", "Ilustración", "Video Production"],
   },
   {
-    name: "Valentina Ruiz",
+    name: "Valentina R.",
     role: "Especialista en IA",
     bio: "Ingeniera en IA con maestría en NLP. Lidera nuestros proyectos de automatización y chatbots inteligentes.",
     specialties: ["Machine Learning", "NLP", "Automatización"],
