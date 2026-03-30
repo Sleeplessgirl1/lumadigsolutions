@@ -50,6 +50,28 @@ export const services = [
     priceRange: "$2,000 - $20,000 USD",
     deliveryTime: "4-16 semanas",
   },
+  {
+    id: "audiovisual",
+    icon: "Video",
+    title: "Producción Audiovisual",
+    description: "Videos corporativos, comerciales, contenido para redes y storytelling visual.",
+    subServices: ["Video corporativo", "Comerciales", "Reels & Shorts", "Documentales de marca"],
+    longDescription: "Producimos contenido audiovisual de alto impacto que cuenta la historia de tu marca. Desde videos corporativos y comerciales hasta contenido para redes sociales, nuestro equipo de producción crea piezas visuales que conectan emocionalmente con tu audiencia y generan resultados.",
+    features: ["Videos corporativos", "Comerciales y spots", "Contenido para redes sociales", "Edición y postproducción", "Motion graphics", "Storytelling de marca"],
+    priceRange: "$1,000 - $15,000 USD",
+    deliveryTime: "2-8 semanas",
+  },
+  {
+    id: "renders",
+    icon: "Box",
+    title: "Renders 3D",
+    description: "Visualización arquitectónica, renders de producto y animaciones 3D.",
+    subServices: ["Render arquitectónico", "Render de producto", "Animación 3D", "Recorridos virtuales"],
+    longDescription: "Creamos renders fotorrealistas y animaciones 3D que dan vida a tus proyectos antes de construirlos. Desde visualización arquitectónica hasta renders de producto para e-commerce, transformamos ideas en imágenes impactantes que venden.",
+    features: ["Renders fotorrealistas", "Visualización arquitectónica", "Renders de producto", "Animaciones 3D", "Recorridos virtuales 360°", "Postproducción profesional"],
+    priceRange: "$500 - $10,000 USD",
+    deliveryTime: "1-6 semanas",
+  },
 ];
 
 export const portfolioItems = [

@@ -1,11 +1,11 @@
-import { Monitor, Palette, Bot, Settings, Check, ArrowRight } from "lucide-react";
+import { Monitor, Palette, Bot, Settings, Video, Box, Check, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import AnimatedSection from "@/components/AnimatedSection";
 import { services, pricingPlans, faqItems } from "@/data/content";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { motion } from "framer-motion";
 
-const iconMap: Record<string, React.ElementType> = { Monitor, Palette, Bot, Settings };
+const iconMap: Record<string, React.ElementType> = { Monitor, Palette, Bot, Settings, Video, Box };
 
 const sectionStyles = [
   {
