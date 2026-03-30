@@ -55,11 +55,11 @@ export const services = [
 export const portfolioItems = [
   {
     id: "1",
-    title: "TechStore MX",
+    title: "AGENCIA DE MKT",
     category: "E-commerce",
     description: "Tienda online completa con +500 productos, pasarela de pagos y panel de administración.",
     image: portfolio1,
-    tags: ["React", "Stripe", "Node.js"],
+    tags: ["React", "PayPal", "Node.js"],
     client: "TechStore México",
     results: "+180% ventas online",
     stack: ["React", "Node.js", "PostgreSQL", "Stripe", "AWS"],
