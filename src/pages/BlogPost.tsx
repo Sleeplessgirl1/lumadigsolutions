@@ -47,7 +47,7 @@ const BlogPost = () => {
               {post.content.split('\n\n').map((paragraph, i) => (
                 <div key={i} className="mt-6">
                   {paragraph.split('\n').map((line, j) => (
-                    <p key={j} className="text-muted-foreground leading-relaxed">{line}</p>
+                    <p key={j} className="text-muted-foreground leading-relaxed font-sans font-normal">{line}</p>
                   ))}
                 </div>
               ))}
