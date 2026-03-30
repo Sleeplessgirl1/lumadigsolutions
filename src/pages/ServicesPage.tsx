@@ -3,8 +3,44 @@ import { Button } from "@/components/ui/button";
 import AnimatedSection from "@/components/AnimatedSection";
 import { services, pricingPlans, faqItems } from "@/data/content";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { motion } from "framer-motion";
 
 const iconMap: Record<string, React.ElementType> = { Monitor, Palette, Bot, Settings };
+
+const sectionStyles = [
+  {
+    bg: "bg-primary",
+    textColor: "text-primary-foreground",
+    mutedColor: "text-primary-foreground/70",
+    watermark: "DESARROLLO",
+    iconColor: "text-primary-foreground/15",
+    watermarkColor: "text-primary-foreground/10",
+  },
+  {
+    bg: "bg-accent",
+    textColor: "text-accent-foreground",
+    mutedColor: "text-accent-foreground/70",
+    watermark: "DISEÑO",
+    iconColor: "text-accent-foreground/15",
+    watermarkColor: "text-accent-foreground/10",
+  },
+  {
+    bg: "bg-secondary",
+    textColor: "text-secondary-foreground",
+    mutedColor: "text-secondary-foreground/70",
+    watermark: "INTELIGENCIA",
+    iconColor: "text-secondary-foreground/15",
+    watermarkColor: "text-secondary-foreground/10",
+  },
+  {
+    bg: "bg-[hsl(330,70%,50%)]",
+    textColor: "text-white",
+    mutedColor: "text-white/70",
+    watermark: "SOFTWARE",
+    iconColor: "text-white/15",
+    watermarkColor: "text-white/10",
+  },
+];
 
 const ServicesPage = () => {
   return (
@@ -23,47 +59,98 @@ const ServicesPage = () => {
         </div>
       </section>
 
-      {/* Detailed Services */}
-      <section className="py-28 md:py-36 bg-background">
-        <div className="container mx-auto px-4 sm:px-6 space-y-28">
-          {services.map((service, i) => {
-            const Icon = iconMap[service.icon];
-            return (
-              <AnimatedSection key={service.id}>
-                <div className={`grid grid-cols-1 lg:grid-cols-2 gap-16 items-center`}>
-                  <div className={i % 2 === 1 ? "lg:order-2" : ""}>
-                    <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
-                      <Icon className="w-7 h-7 text-primary" />
+      {/* Service Sections - COLAB Style */}
+      {services.map((service, i) => {
+        const Icon = iconMap[service.icon];
+        const style = sectionStyles[i % sectionStyles.length];
+
+        return (
+          <section
+            key={service.id}
+            className={`${style.bg} relative overflow-hidden min-h-[80vh] flex items-center`}
+          >
+            {/* Large watermark text */}
+            <motion.div
+              initial={{ opacity: 0, y: 60 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              className="absolute inset-0 flex items-center justify-center pointer-events-none select-none"
+            >
+              <span
+                className={`font-display font-black uppercase text-[12vw] leading-none ${style.watermarkColor} whitespace-nowrap`}
+              >
+                {style.watermark}
+              </span>
+            </motion.div>
+
+            {/* 3D-style icon */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8, rotate: -10 }}
+              whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+              className="absolute right-[10%] top-1/2 -translate-y-1/2 hidden lg:flex items-center justify-center"
+            >
+              <div className={`w-64 h-64 rounded-3xl ${style.iconColor} backdrop-blur-sm flex items-center justify-center`}>
+                <Icon className={`w-40 h-40 ${style.textColor} opacity-30`} strokeWidth={1} />
+              </div>
+            </motion.div>
+
+            {/* Content */}
+            <div className="container mx-auto px-4 sm:px-6 relative z-10 py-20 lg:py-28">
+              <div className="max-w-2xl">
+                <AnimatedSection>
+                  <h2
+                    className={`text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-black uppercase tracking-tight ${style.textColor} mb-6 leading-[0.95]`}
+                  >
+                    {service.title}
+                  </h2>
+                </AnimatedSection>
+
+                <AnimatedSection delay={0.15}>
+                  <p className={`${style.mutedColor} text-base sm:text-lg leading-relaxed mb-10 max-w-lg`}>
+                    {service.longDescription}
+                  </p>
+                </AnimatedSection>
+
+                <AnimatedSection delay={0.25}>
+                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-10">
+                    {service.features.map((f) => (
+                      <li key={f} className={`flex items-start gap-3 text-sm ${style.textColor}`}>
+                        <Check className="w-4 h-4 mt-0.5 shrink-0 opacity-80" /> {f}
+                      </li>
+                    ))}
+                  </ul>
+                </AnimatedSection>
+
+                <AnimatedSection delay={0.35}>
+                  <div className={`flex flex-wrap gap-8 text-sm ${style.mutedColor} mb-8`}>
+                    <div>
+                      <strong className={`${style.textColor} font-display`}>Precio:</strong> {service.priceRange}
                     </div>
-                    <h2 className="text-3xl sm:text-4xl font-display font-bold text-foreground uppercase tracking-tight mb-6">{service.title}</h2>
-                    <div className="section-divider" />
-                    <p className="text-muted-foreground leading-relaxed mb-8 text-lg">{service.longDescription}</p>
-                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-                      {service.features.map((f) => (
-                        <li key={f} className="flex items-start gap-3 text-sm text-foreground">
-                          <Check className="w-4 h-4 text-success mt-0.5 shrink-0" /> {f}
-                        </li>
-                      ))}
-                    </ul>
-                    <div className="flex flex-wrap gap-8 text-sm text-muted-foreground mb-8">
-                      <div><strong className="text-foreground font-display">Precio:</strong> {service.priceRange}</div>
-                      <div><strong className="text-foreground font-display">Tiempo:</strong> {service.deliveryTime}</div>
+                    <div>
+                      <strong className={`${style.textColor} font-display`}>Tiempo:</strong> {service.deliveryTime}
                     </div>
-                    <Button asChild>
-                      <a href="https://wa.me/521234567890" target="_blank" rel="noopener noreferrer">
-                        Contratar <ArrowRight className="ml-2 w-4 h-4" />
-                      </a>
-                    </Button>
                   </div>
-                  <div className={`aspect-square rounded-2xl bg-primary/5 flex items-center justify-center ${i % 2 === 1 ? "lg:order-1" : ""}`}>
-                    <Icon className="w-32 h-32 text-primary/20" />
-                  </div>
-                </div>
-              </AnimatedSection>
-            );
-          })}
-        </div>
-      </section>
+                </AnimatedSection>
+
+                <AnimatedSection delay={0.4}>
+                  <Button
+                    asChild
+                    variant="outline"
+                    className={`rounded-full border-2 border-current ${style.textColor} bg-transparent hover:bg-white/10 uppercase font-bold tracking-wider px-8 py-6 text-sm`}
+                  >
+                    <a href="https://wa.me/526145154240?text=Hola%20te%20escribo%20porque%20me%20interesa%20saber%20más" target="_blank" rel="noopener noreferrer">
+                      Contratar <ArrowRight className="ml-2 w-4 h-4" />
+                    </a>
+                  </Button>
+                </AnimatedSection>
+              </div>
+            </div>
+          </section>
+        );
+      })}
 
       {/* Comparison Table */}
       <section className="py-28 md:py-36 bg-surface">
@@ -93,7 +180,7 @@ const ServicesPage = () => {
                     ))}
                   </ul>
                   <Button asChild variant={plan.highlighted ? "default" : "outline"} className="w-full">
-                    <a href="https://wa.me/521234567890" target="_blank" rel="noopener noreferrer">{plan.cta}</a>
+                    <a href="https://wa.me/526145154240?text=Hola%20te%20escribo%20porque%20me%20interesa%20saber%20más" target="_blank" rel="noopener noreferrer">{plan.cta}</a>
                   </Button>
                 </div>
               </AnimatedSection>
