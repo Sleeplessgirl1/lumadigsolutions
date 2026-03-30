@@ -23,7 +23,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-[70px]">
           <Link to="/" className="flex items-center">
-            <span className="font-display text-2xl font-bold tracking-tight text-foreground">LUMA</span>
+            <span className="font-display tracking-tight text-foreground text-5xl font-extrabold text-left">LUMA</span>
           </Link>
 
           <div className="hidden md:flex items-center gap-1">
