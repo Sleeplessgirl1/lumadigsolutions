@@ -192,7 +192,7 @@ const ServicesPage = () => {
           </div>
 
           {/* Card container */}
-          <div className="relative w-full max-w-6xl h-[80vh] md:h-[75vh]">
+          <div className="relative w-full max-w-6xl h-[80vh] md:h-[75vh] px-0 mx-[49px]">
             {services.map((service, i) => (
               <ServiceCard
                 key={service.id}
