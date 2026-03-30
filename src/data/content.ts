@@ -99,7 +99,7 @@ export const portfolioItems = [
   },
   {
     id: "3",
-    title: "Dashboard Analytics",
+    title: "CRM",
     category: "Software",
     description: "Plataforma de análisis de datos en tiempo real para empresa de logística.",
     image: portfolio3,
