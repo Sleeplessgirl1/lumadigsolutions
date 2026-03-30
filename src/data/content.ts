@@ -58,7 +58,7 @@ export const services = [
     subServices: ["Video corporativo", "Comerciales", "Reels & Shorts", "Documentales de marca"],
     longDescription: "Producimos contenido audiovisual de alto impacto que cuenta la historia de tu marca. Desde videos corporativos y comerciales hasta contenido para redes sociales, nuestro equipo de producción crea piezas visuales que conectan emocionalmente con tu audiencia y generan resultados.",
     features: ["Videos corporativos", "Comerciales y spots", "Contenido para redes sociales", "Edición y postproducción", "Motion graphics", "Storytelling de marca"],
-    priceRange: "$1,000 - $15,000 USD",
+    priceRange: "",
     deliveryTime: "2-8 semanas",
   },
   {
