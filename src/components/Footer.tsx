@@ -24,7 +24,7 @@ const Footer = () => {
         <div className="container mx-auto px-4 sm:px-6">
           <div className="flex flex-col items-start gap-6">
             <a
-              href="https://instagram.com/lumadigsolutions"
+              href="https://www.instagram.com/lumadigsolutions/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-3xl sm:text-5xl md:text-6xl font-display font-black text-foreground uppercase tracking-tight hover:opacity-70 transition-opacity"
