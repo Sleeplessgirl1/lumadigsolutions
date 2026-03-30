@@ -34,9 +34,9 @@ export const services = [
     title: "Automatización IA",
     description: "Chatbots, automatización de procesos, atención 24/7.",
     subServices: ["Chatbots", "Procesos", "Integración CRM"],
-    longDescription: "Implementamos soluciones de inteligencia artificial que automatizan procesos repetitivos y mejoran la experiencia del cliente. Chatbots inteligentes, automatización de flujos de trabajo y integración con tu CRM existente para escalar tu negocio sin aumentar costos operativos.",
+    longDescription: "Implementamos soluciones de inteligencia artificial que automatizan procesos repetitivos y mejoran la experiencia del cliente. Chatbots inteligentes, automatización de flujos de trabajo y integración con tu CRM existente para escalar tu negocio sin aumentar costos.",
     features: ["Chatbots con IA conversacional", "Automatización de procesos", "Integración con CRM/ERP", "Atención al cliente 24/7", "Análisis de datos automatizado", "Flujos de trabajo inteligentes"],
-    priceRange: "$800 - $8,000 USD",
+    priceRange: "",
     deliveryTime: "3-10 semanas",
   },
   {

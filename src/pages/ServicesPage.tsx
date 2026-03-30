@@ -118,9 +118,11 @@ const ServiceCard = ({ service, style, isActive }: { service: typeof services[0]
           </ul>
 
           <div className={`flex flex-wrap gap-6 text-xs sm:text-sm ${style.mutedColor} mb-6 my-0 py-0`}>
-            <div>
-              <strong className={`${style.textColor} font-display`}>Precio:</strong> {service.priceRange}
-            </div>
+            {service.priceRange && (
+              <div>
+                <strong className={`${style.textColor} font-display`}>Precio:</strong> {service.priceRange}
+              </div>
+            )}
             <div>
               <strong className={`${style.textColor} font-display`}>Tiempo:</strong> {service.deliveryTime}
             </div>
