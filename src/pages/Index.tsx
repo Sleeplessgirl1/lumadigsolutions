@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useRef } from "react";
 import CodeRain from "@/components/CodeRain";
+import SacredGeometry from "@/components/SacredGeometry";
 import AnimatedSection from "@/components/AnimatedSection";
 import { services, portfolioItems, processSteps, pricingPlans, testimonials, blogPosts } from "@/data/content";
 
