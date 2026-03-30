@@ -99,7 +99,7 @@ export const portfolioItems = [
   },
   {
     id: "5",
-    title: "Sabores MX",
+    title: "REDISEÑO WEB",
     category: "Web",
     description: "Sitio web con reservaciones online y menú digital para cadena de restaurantes.",
     image: portfolio5,
