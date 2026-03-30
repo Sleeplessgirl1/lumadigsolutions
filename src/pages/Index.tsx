@@ -309,7 +309,7 @@ const Index = () => {
       </section>
 
       {/* BLOG PREVIEW */}
-      <section className="py-28 md:py-36 bg-surface">
+      <section className="py-28 md:py-36 bg-surface rounded-3xl">
         <div className="container mx-auto px-4 sm:px-6">
           <AnimatedSection className="mb-20">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-foreground uppercase tracking-tight">
