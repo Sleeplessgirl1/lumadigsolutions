@@ -163,7 +163,7 @@ const Index = () => {
       </section>
 
       {/* PROCESO - Two column layout */}
-      <section className="py-28 md:py-36 bg-background" ref={processRef}>
+      <section className="py-28 md:py-36 bg-background pb-0" ref={processRef}>
         <div className="container mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             {/* Left - Steps */}
