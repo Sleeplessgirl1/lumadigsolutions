@@ -103,15 +103,17 @@ const AboutPage = () => {
           </AnimatedSection>
           <div className="space-y-10">
             {[
-              { year: "2025", event: "Fundación de Luma Solutions." },
-              { year: "2026", event: "Primeros 10 clientes y lanzamiento de servicios de IA" },
-              { year: "2025", event: "Alianza estratégica con Productores de Video" },
-              { year: "2027", event: "Impacto en todo México" },
+              { year: "2025", event: "Fundación de Luma Solutions.", icon: Rocket },
+              { year: "2026", event: "Primeros 10 clientes y lanzamiento de servicios de IA", icon: Users },
+              { year: "2025", event: "Alianza estratégica con Productores de Video", icon: Handshake },
+              { year: "2027", event: "Impacto en todo México", icon: Globe },
             ].map((item, i) => (
               <AnimatedSection key={i} delay={i * 0.1}>
                 <div className="flex gap-6">
                   <div className="flex flex-col items-center">
-                    <div className="w-4 h-4 rounded-full bg-primary" />
+                    <div className="w-10 h-10 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center">
+                      <item.icon className="w-5 h-5 text-primary" />
+                    </div>
                     {i < 3 && <div className="w-0.5 flex-1 bg-secondary-foreground/20 mt-2" />}
                   </div>
                   <div className="pb-4">
