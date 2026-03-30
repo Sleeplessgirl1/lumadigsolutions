@@ -22,6 +22,15 @@ const Footer = () => {
       {/* Main Footer */}
       <div className="bg-gradient-to-b from-primary/90 to-primary/70 py-16 md:py-24">
         <div className="container mx-auto px-4 sm:px-6">
+          {/* Logo grande */}
+          <div className="mb-12">
+            <img
+              src="/lovable-uploads/36bdbf58-9bfb-4fce-bbda-550abde1acab.png"
+              alt="LUMA Digital Solutions"
+              className="h-24 sm:h-32 md:h-40 lg:h-48 w-auto object-contain"
+            />
+          </div>
+
           <div className="flex flex-col items-start gap-6">
             <a
               href="https://www.instagram.com/lumadigsolutions/"
