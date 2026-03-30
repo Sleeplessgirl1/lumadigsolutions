@@ -98,10 +98,10 @@ const ServiceCard = ({ service, style, isActive }: { service: typeof services[0]
           opacity: isActive ? 1 : 0,
         }}
         transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: isActive ? 0.35 : 0 }}
-        className="relative z-10 px-5 sm:px-10 md:px-14 py-6 sm:py-10 md:py-14 w-full"
+        className="relative z-10 px-5 sm:px-10 md:px-14 py-6 sm:py-8 md:py-10 w-full"
       >
-        <div className="max-w-2xl py-0 mb-2 md:mb-[43px]">
-          <h2 className={`text-xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-black uppercase tracking-tight ${style.textColor} mb-2 leading-[0.95] py-0 my-2 md:my-[44px]`}>
+        <div className="max-w-2xl py-0 mb-2 md:mb-4">
+          <h2 className={`text-xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-black uppercase tracking-tight ${style.textColor} mb-2 leading-[0.95] py-0 my-2 md:my-4`}>
             {service.title}
           </h2>
 
