@@ -186,7 +186,7 @@ export const blogPosts = [
     date: "2025-03-15",
     author: "LUMA Team",
     readTime: "25 min",
-    image: "/src/assets/blog-ecommerce.jpg",
+    image: "ecommerce",
     excerpt: "Descubre los pasos esenciales para crear una tienda online exitosa. Desde la elección de plataforma hasta estrategias de marketing digital que funcionan.",
     content: `En 2026, lanzar un e-commerce ya no es un lujo, es una necesidad. Si eres dueño de un negocio en Chihuahua o México y aún no tienes tienda online, te estás dejando dinero en la mesa. Pero aquí viene la buena noticia: lanzar un e-commerce exitoso es más accesible que nunca.
 
