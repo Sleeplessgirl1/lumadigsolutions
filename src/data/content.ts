@@ -186,7 +186,7 @@ export const blogPosts = [
     date: "2025-03-15",
     author: "LUMA Team",
     readTime: "25 min",
-    image: "/src/assets/blog-ecommerce.jpg",
+    image: "ecommerce",
     excerpt: "Descubre los pasos esenciales para crear una tienda online exitosa. Desde la elección de plataforma hasta estrategias de marketing digital que funcionan.",
     content: `En 2026, lanzar un e-commerce ya no es un lujo, es una necesidad. Si eres dueño de un negocio en Chihuahua o México y aún no tienes tienda online, te estás dejando dinero en la mesa. Pero aquí viene la buena noticia: lanzar un e-commerce exitoso es más accesible que nunca.
 
@@ -544,7 +544,7 @@ Tu marca tiene historia. Nosotros la contamos.
     date: "2025-03-01",
     author: "LUMA Team",
     readTime: "6 min",
-    image: "/src/assets/blog-seo.jpg",
+    image: "seo",
     excerpt: "Si tu negocio está en Google pero nadie te encuentra, tienes un problema. El SEO es la base de cualquier estrategia digital exitosa. Descubre 5 estrategias probadas que realmente funcionan.",
     content: "¿Por qué necesitas SEO?\nSi tu negocio está en Google pero nadie te encuentra, tienes un problema. El SEO es la base de cualquier estrategia digital exitosa.\n\n5 Estrategias que funcionan\n\n1. Optimización On-Page\n• Títulos claros (\"Agencia diseño web Chihuahua\")\n• Keywords naturales\n• URLs limpias\n• Estructura con H1, H2, H3\n\n2. Contenido de Calidad\n• Artículos que ayudan\n• Blog actualizado (1-2 posts/mes)\n• Resuelve problemas reales\n\n3. Link Building\n• Directorios locales (Google My Business, Yelp)\n• Menciones en medios\n• Alianzas con complementarios\n• Guest posting\n\n4. Mobile First\n• 70% de búsquedas son móvil\n• Página rápida en celular\n• Botones clickeables\n\n5. Velocidad de Carga\n• Menos de 3 segundos\n• Comprimir imágenes\n• Hosting decente\n\nPlan 90 días\nMes 1: Auditoría SEO + optimizar 5 páginas clave\nMes 2: Contenido + link building local\nMes 3: Consolidar + analizar resultados\n\nCasos reales\n• Restaurante Guadalajara: +60% reservas en 4 meses\n• Consultoría CDMX: +3 clientes/mes sin publicidad\n• E-commerce Monterrey: +150% tráfico, +80% ventas\n\nErrores a evitar\n🚫 Prometer resultados en 1 semana\n🚫 Comprar links baratos\n🚫 Ignorar mobile\n🚫 Copiar contenido\n\n¿Necesitas SEO?\nContáctanos para consulta gratuita.\n📱 614-370-7858\n🌐 @lumadigsolutions\nLUMA Digital Solutions 🚀",
   },
@@ -555,7 +555,7 @@ Tu marca tiene historia. Nosotros la contamos.
     date: "2025-02-20",
     author: "LUMA Team",
     readTime: "7 min",
-    image: "/src/assets/blog-ia.jpg",
+    image: "ia",
     excerpt: "La inteligencia artificial ya no es ciencia ficción. Conoce casos reales de empresas mexicanas que están usando IA para crecer y automatizar procesos.",
     content: "La adopción de IA en empresas mexicanas ha crecido un 300% en el último año...",
   },
