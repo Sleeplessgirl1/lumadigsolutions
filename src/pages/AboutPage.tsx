@@ -1,6 +1,6 @@
 import AnimatedSection from "@/components/AnimatedSection";
 import { teamMembers, processSteps } from "@/data/content";
-import { Target, Eye, Heart, Sparkles } from "lucide-react";
+import { Target, Eye, Heart, Sparkles, Rocket, Users, Handshake, Globe } from "lucide-react";
 
 const values = [
   { icon: Target, title: "Excelencia", desc: "No nos conformamos con lo bueno. Buscamos lo excepcional." },
@@ -103,15 +103,17 @@ const AboutPage = () => {
           </AnimatedSection>
           <div className="space-y-10">
             {[
-              { year: "2024", event: "Fundación de LUMA Digital Solutions en Ciudad de México" },
-              { year: "2024", event: "Primeros 10 clientes y lanzamiento de servicios de IA" },
-              { year: "2025", event: "Expansión a toda Latinoamérica y +50 proyectos completados" },
-              { year: "2025", event: "Alianzas estratégicas con empresas de tecnología" },
+              { year: "2025", event: "Fundación de Luma Solutions.", icon: Rocket },
+              { year: "2026", event: "Primeros 10 clientes y lanzamiento de servicios de IA", icon: Users },
+              { year: "2025", event: "Alianza estratégica con Productores de Video", icon: Handshake },
+              { year: "2027", event: "Impacto en todo México", icon: Globe },
             ].map((item, i) => (
               <AnimatedSection key={i} delay={i * 0.1}>
                 <div className="flex gap-6">
                   <div className="flex flex-col items-center">
-                    <div className="w-4 h-4 rounded-full bg-primary" />
+                    <div className="w-10 h-10 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center">
+                      <item.icon className="w-5 h-5 text-primary" />
+                    </div>
                     {i < 3 && <div className="w-0.5 flex-1 bg-secondary-foreground/20 mt-2" />}
                   </div>
                   <div className="pb-4">

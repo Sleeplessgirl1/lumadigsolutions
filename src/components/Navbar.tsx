@@ -23,7 +23,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-[70px]">
           <Link to="/" className="flex items-center">
-            <img src="/lovable-uploads/480a7cc2-d01b-4d9e-bf29-6a211a7c258a.png" alt="LUMA Digital Solutions" className="h-10 py-0 mx-[15px] my-px object-fill" />
+            <span className="font-display tracking-tight text-foreground text-5xl font-extrabold text-left">LUMA</span>
           </Link>
 
           <div className="hidden md:flex items-center gap-1">
@@ -43,9 +43,14 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:flex items-center">
-            <Button asChild size="sm">
-              <a href="https://wa.me/521234567890" target="_blank" rel="noopener noreferrer">
-                Hablemos
+            <Button asChild size="sm" className="overflow-hidden">
+              <a href="https://wa.me/526145154240?text=Hola%20te%20escribo%20porque%20me%20interesa%20saber%20m%C3%A1s" target="_blank" rel="noopener noreferrer" className="group relative">
+                <span className="inline-block transition-transform duration-300 group-hover:-translate-y-full group-hover:opacity-0">
+                  Hablemos
+                </span>
+                <span className="absolute inset-0 flex items-center justify-center translate-y-full opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                  614 515 4240
+                </span>
               </a>
             </Button>
           </div>
@@ -84,7 +89,7 @@ const Navbar = () => {
               ))}
               <div className="pt-4">
                 <Button asChild className="w-full">
-                  <a href="https://wa.me/521234567890" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/526145154240?text=Hola%20te%20escribo%20porque%20me%20interesa%20saber%20m%C3%A1s" target="_blank" rel="noopener noreferrer">
                     Hablemos
                   </a>
                 </Button>

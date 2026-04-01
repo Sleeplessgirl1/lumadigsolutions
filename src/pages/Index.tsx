@@ -1,12 +1,14 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, ArrowRight, Monitor, Palette, Bot, Settings, Star, Check, Calendar, ChevronRight, X } from "lucide-react";
+import { ArrowDown, ArrowRight, Monitor, Palette, Bot, Settings, Star, Check, Calendar, ChevronRight, X, Video, Box } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useRef } from "react";
+import CodeRain from "@/components/CodeRain";
+import SacredGeometry from "@/components/SacredGeometry";
 import AnimatedSection from "@/components/AnimatedSection";
 import { services, portfolioItems, processSteps, pricingPlans, testimonials, blogPosts } from "@/data/content";
 
-const iconMap: Record<string, React.ElementType> = { Monitor, Palette, Bot, Settings };
+const iconMap: Record<string, React.ElementType> = { Monitor, Palette, Bot, Settings, Video, Box };
 
 const Index = () => {
   const processRef = useRef<HTMLDivElement>(null);
@@ -19,8 +21,9 @@ const Index = () => {
   return (
     <div className="overflow-hidden">
       {/* HERO */}
-      <section className="relative min-h-screen flex items-center justify-center bg-primary/5">
+      <section className="relative min-h-screen flex items-center justify-center bg-background">
         <div className="absolute inset-0 overflow-hidden">
+          <CodeRain />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-primary/10 blur-[150px]" />
         </div>
         <div className="relative container mx-auto px-4 sm:px-6 text-center pt-20">
@@ -43,12 +46,12 @@ const Index = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mx-[11px] px-0">
               <Button asChild size="lg">
-                <a href="https://wa.me/6145154240?text=Hola%20LUMA%2C%20me%20interesa%20conocer%20más%20sobre%20sus%20servicios" className="border border-secondary font-sans">
+                <a href="https://wa.me/526145154240?text=Hola%20te%20escribo%20porque%20me%20interesa%20saber%20m%C3%A1s" className="border border-secondary font-sans" target="_blank" rel="noopener noreferrer">
                   Comienza Ahora <ArrowRight className="ml-2 w-4 h-4" />
                 </a>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <a href="https://wa.me/6145154240?text=Hola%20LUMA%2C%20me%20interesa%20conocer%20más%20sobre%20sus%20servicios" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/526145154240?text=Hola%20te%20escribo%20porque%20me%20interesa%20saber%20m%C3%A1s" target="_blank" rel="noopener noreferrer">
                   Agenda Consulta Gratis
                 </a>
               </Button>
@@ -81,11 +84,11 @@ const Index = () => {
               Soluciones integrales para llevar tu negocio al siguiente nivel
             </p>
           </AnimatedSection>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="flex overflow-x-auto gap-6 pb-4 -mx-4 px-4 snap-x snap-mandatory scrollbar-hide">
             {services.map((service, i) => {
               const Icon = iconMap[service.icon];
               return (
-                <AnimatedSection key={service.id} delay={i * 0.1}>
+                <AnimatedSection key={service.id} delay={i * 0.1} className="min-w-[280px] md:min-w-[300px] snap-start flex-shrink-0">
                   <div className="card-colab h-full text-left rounded-xl opacity-100 border border-secondary">
                     <div className="w-14 h-14 rounded-xl bg-primary/10 mb-6 shadow-sm flex-row flex items-center justify-center border border-popover-foreground">
                       <Icon className="w-7 h-7 text-primary" />
@@ -111,7 +114,7 @@ const Index = () => {
       </section>
 
       {/* PORTFOLIO */}
-      <section className="py-28 md:py-36 bg-surface">
+      <section className="py-28 md:py-36 bg-surface border-solid rounded-3xl">
         <div className="container mx-auto px-4 sm:px-6">
           <AnimatedSection className="mb-20">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-foreground uppercase tracking-tight">
@@ -159,77 +162,67 @@ const Index = () => {
         </div>
       </section>
 
-      {/* PROCESO - Two column parallax */}
-      <section className="py-28 md:py-36 bg-background" ref={processRef}>
+      {/* PROCESO - Two column layout */}
+      <section className="py-28 md:py-36 bg-background pb-0" ref={processRef}>
         <div className="container mx-auto px-4 sm:px-6">
-          <AnimatedSection className="mb-20">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-foreground uppercase tracking-tight">
-              Nuestro Proceso
-            </h2>
-            <p className="text-muted-foreground mt-4 text-lg">Hacemos más, hablamos menos</p>
-          </AnimatedSection>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-            {/* Left - Static text */}
-            <div className="space-y-16">
+            {/* Left - Steps */}
+            <div className="space-y-14">
               {processSteps.map((step, i) => (
                 <AnimatedSection key={step.number} delay={i * 0.15}>
                   <div>
-                    <div className="flex items-center gap-4 mb-4">
-                      <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-display font-bold text-sm">
-                        {step.number}
-                      </div>
-                      <h3 className="font-display font-bold text-2xl text-foreground uppercase tracking-wide">{step.title}</h3>
-                    </div>
-                    <p className="text-muted-foreground text-lg leading-relaxed pl-16">{step.description}</p>
+                    <h3 className="font-display font-bold text-xl md:text-2xl text-foreground uppercase tracking-wide mb-3">
+                      {step.title}
+                    </h3>
+                    <div className="w-full h-[2px] bg-primary/30 mb-4" />
+                    <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
+                      {step.description}
+                    </p>
                   </div>
                 </AnimatedSection>
               ))}
             </div>
-            {/* Right - Parallax illustration */}
-            <motion.div
-              style={{ y: parallaxY }}
-              className="hidden lg:flex items-center justify-center sticky top-32"
-            >
-              <div className="w-full aspect-square rounded-2xl bg-primary/5 flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10" />
-                <div className="relative grid grid-cols-2 gap-6 p-12">
-                  {[Monitor, Palette, Bot, Settings].map((Icon, i) => (
-                    <motion.div
-                      key={i}
-                      initial={{ opacity: 0, scale: 0.8 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      transition={{ delay: i * 0.2, duration: 0.5 }}
-                      viewport={{ once: true }}
-                      className="w-28 h-28 rounded-2xl bg-card border border-border shadow-card flex items-center justify-center"
-                    >
-                      <Icon className="w-12 h-12 text-primary" />
-                    </motion.div>
-                  ))}
+            {/* Right - Heading + CTA */}
+            <div className="lg:sticky lg:top-32">
+              <AnimatedSection>
+                <h2 className="text-4xl sm:text-5xl md:text-7xl font-display font-bold text-foreground uppercase tracking-tight leading-[1.1] mb-8">
+                  Nuestro
+                  <br />
+                  <span className="text-gradient">Proceso</span>
+                </h2>
+                <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-10 max-w-md">
+                  Nuestro credo se resume en cuatro palabras: hacemos más, hablamos menos. Una vez que te conocemos a fondo y construimos la estrategia perfecta, entregamos resultados que hablan por sí solos.
+                </p>
+                <div className="flex items-center gap-3">
+                  <Button asChild size="lg">
+                    <a href="https://wa.me/526145154240?text=Hola%20te%20escribo%20porque%20me%20interesa%20saber%20más" target="_blank" rel="noopener noreferrer">
+                      Te Mostramos Cómo
+                    </a>
+                  </Button>
+                  <Button asChild size="lg" variant="outline" className="rounded-full w-12 h-12 p-0">
+                    <a href="https://wa.me/526145154240?text=Hola%20te%20escribo%20porque%20me%20interesa%20saber%20m%C3%A1s" target="_blank" rel="noopener noreferrer">
+                      <ArrowRight className="w-5 h-5" />
+                    </a>
+                  </Button>
                 </div>
-              </div>
-            </motion.div>
+                <SacredGeometry />
+              </AnimatedSection>
+            </div>
           </div>
-          <AnimatedSection className="mt-14">
-            <Button asChild>
-              <a href="https://wa.me/526145154240" target="_blank" rel="noopener noreferrer">
-                Te Mostramos Cómo <ArrowRight className="ml-2 w-4 h-4" />
-              </a>
-            </Button>
-          </AnimatedSection>
         </div>
       </section>
 
       {/* PRICING */}
-      <section className="py-28 md:py-36 bg-surface">
+      <section className="py-28 md:py-36 bg-surface rounded-3xl">
         <div className="container mx-auto px-4 sm:px-6">
           <AnimatedSection className="text-center mb-20">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-foreground uppercase tracking-tight">
               Planes para Todos
             </h2>
           </AnimatedSection>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="flex overflow-x-auto gap-6 pb-4 -mx-4 px-4 snap-x snap-mandatory scrollbar-hide md:grid md:grid-cols-3 md:overflow-visible md:mx-0 md:px-0 md:pb-0 md:gap-8 max-w-5xl md:mx-auto">
             {pricingPlans.map((plan, i) => (
-              <AnimatedSection key={plan.name} delay={i * 0.1}>
+              <AnimatedSection key={plan.name} delay={i * 0.1} className="min-w-[280px] snap-start flex-shrink-0 md:min-w-0 md:flex-shrink">
                 <div className={`p-10 rounded-lg border h-full flex flex-col transition-all duration-300 hover:scale-[1.02] ${
                   plan.highlighted
                     ? "border-primary bg-card shadow-glow"
@@ -259,7 +252,7 @@ const Index = () => {
                     variant={plan.highlighted ? "default" : "outline"}
                     className="w-full"
                   >
-                    <a href="https://wa.me/526145154240" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/526145154240?text=Hola%20te%20escribo%20porque%20me%20interesa%20saber%20m%C3%A1s" target="_blank" rel="noopener noreferrer">
                       {plan.cta}
                     </a>
                   </Button>
@@ -270,7 +263,7 @@ const Index = () => {
           <AnimatedSection className="text-center mt-10">
             <p className="text-muted-foreground text-sm">
               ¿Necesitas algo custom?{" "}
-              <a href="https://wa.me/526145154240" className="text-primary hover:underline font-medium" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/526145154240?text=Hola%20te%20escribo%20porque%20me%20interesa%20saber%20m%C3%A1s" className="text-primary hover:underline font-medium" target="_blank" rel="noopener noreferrer">
                 Agenda una consulta gratis
               </a>
             </p>
@@ -316,7 +309,7 @@ const Index = () => {
       </section>
 
       {/* BLOG PREVIEW */}
-      <section className="py-28 md:py-36 bg-surface">
+      <section className="py-28 md:py-36 bg-surface rounded-3xl">
         <div className="container mx-auto px-4 sm:px-6">
           <AnimatedSection className="mb-20">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-foreground uppercase tracking-tight">
@@ -328,7 +321,13 @@ const Index = () => {
               <AnimatedSection key={post.slug} delay={i * 0.1}>
                 <Link to={`/blog/${post.slug}`} className="group block">
                   <div className="rounded-lg border border-border bg-card overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:border-primary hover:shadow-card-hover h-full">
-                    <div className="h-48 bg-gradient-dark" />
+                    <div className="h-48 overflow-hidden">
+                      {post.image ? (
+                        <img src={post.image} alt={post.title} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+                      ) : (
+                        <div className="h-full bg-gradient-dark" />
+                      )}
+                    </div>
                     <div className="p-8">
                       <span className="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-primary/10 text-primary">{post.category}</span>
                       <h3 className="font-display font-bold text-foreground mt-4 mb-3 group-hover:text-primary transition-colors text-lg">
@@ -368,16 +367,11 @@ const Index = () => {
             <p className="text-secondary-foreground/60 text-lg mb-12 max-w-xl mx-auto">
               Hablemos sobre tus objetivos. La primera consulta es gratis.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex justify-center">
               <Button asChild size="lg">
-                <a href="https://wa.me/526145154240" target="_blank" rel="noopener noreferrer">
-                  <Calendar className="mr-2 w-4 h-4" /> Agendar Consulta
+                <a href="https://wa.me/526145154240?text=Hola%20te%20escribo%20porque%20me%20interesa%20saber%20m%C3%A1s" target="_blank" rel="noopener noreferrer">
+                  Comienza Ahora — Agenda Consulta Gratis
                 </a>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="border-secondary-foreground/30 text-secondary-foreground hover:bg-secondary-foreground/10">
-                <Link to="/contacto">
-                  Enviar Mensaje
-                </Link>
               </Button>
             </div>
           </AnimatedSection>

@@ -113,16 +113,16 @@ const ContactPage = () => {
                     <h3 className="font-display font-bold text-foreground uppercase tracking-wide mb-6">Información</h3>
                     <div className="space-y-5">
                       <a href="mailto:hola@lumadigital.mx" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary transition-colors">
-                        <Mail className="w-5 h-5 text-primary" /> hola@lumadigital.mx
+                        <Mail className="w-5 h-5 text-primary" />
                       </a>
-                      <a href="tel:+521234567890" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary transition-colors">
-                        <Phone className="w-5 h-5 text-primary" /> +52 (123) 456-7890
+                      <a href="tel:+526145154240" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary transition-colors">
+                        <Phone className="w-5 h-5 text-primary" /> +52 (614) 515-4240
                       </a>
-                      <a href="https://wa.me/521234567890" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary transition-colors">
+                      <a href="https://wa.me/526145154240" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary transition-colors">
                         <MessageCircle className="w-5 h-5 text-primary" /> WhatsApp
                       </a>
                       <div className="flex items-start gap-3 text-sm text-muted-foreground">
-                        <MapPin className="w-5 h-5 text-primary shrink-0" /> Ciudad de México, México
+                        <MapPin className="w-5 h-5 text-primary shrink-0" /> Chihuahua México
                       </div>
                       <div className="flex items-start gap-3 text-sm text-muted-foreground">
                         <Clock className="w-5 h-5 text-primary shrink-0" /> Lun - Vie: 9:00 - 18:00 CST
@@ -131,15 +131,21 @@ const ContactPage = () => {
                   </div>
 
                   <div className="rounded-lg overflow-hidden border border-border">
-                    <iframe
-                      title="Ubicación LUMA"
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d240857.44994685427!2d-99.42677199999999!3d19.390519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0026db097507%3A0x54061076cda0e0!2sCiudad%20de%20M%C3%A9xico!5e0!3m2!1ses-419!2smx!4v1"
-                      width="100%"
-                      height="250"
-                      style={{ border: 0 }}
-                      allowFullScreen
-                      loading="lazy"
-                      referrerPolicy="no-referrer-when-downgrade"
+                    <div
+                      ref={(node) => {
+                        if (node && !node.querySelector('iframe')) {
+                          const iframe = document.createElement('iframe');
+                          iframe.title = "Ubicación LUMA";
+                          iframe.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110988.91158974498!2d-106.14257705!3d28.6329957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea426a39e8c1ef%3A0x3b0dab8e1d7da10b!2sChihuahua%2C%20Chih.!5e0!3m2!1ses-419!2smx!4v1";
+                          iframe.width = "100%";
+                          iframe.height = "250";
+                          iframe.style.border = "0";
+                          iframe.allowFullscreen = true;
+                          iframe.loading = "lazy";
+                          iframe.referrerPolicy = "no-referrer-when-downgrade";
+                          node.appendChild(iframe);
+                        }
+                      }}
                     />
                   </div>
                 </div>
