@@ -1,6 +1,15 @@
 import { Link } from "react-router-dom";
 import AnimatedSection from "@/components/AnimatedSection";
 import { blogPosts } from "@/data/content";
+import blogEcommerce from "@/assets/blog-ecommerce.jpg";
+import blogSeo from "@/assets/blog-seo.jpg";
+import blogIa from "@/assets/blog-ia.jpg";
+
+const blogImages: Record<string, string> = {
+  ecommerce: blogEcommerce,
+  seo: blogSeo,
+  ia: blogIa,
+};
 
 const BlogPage = () => {
   return (
