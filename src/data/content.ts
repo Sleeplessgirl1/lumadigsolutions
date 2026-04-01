@@ -146,8 +146,8 @@ export const portfolioItems = [
 export const testimonials = [
   {
     name: "Carlos Mendoza",
-    role: "CEO",
-    company: "TechStore MX",
+    role: "Fundador",
+    company: "Las Baras",
     text: "LUMA transformó nuestra presencia digital. Las ventas online crecieron un 180% en 3 meses. Increíble equipo.",
     rating: 5,
     result: "+180% ventas",
@@ -155,7 +155,7 @@ export const testimonials = [
   {
     name: "Ana García",
     role: "Fundadora",
-    company: "Verde Natural",
+    company: "Estilstas Mague",
     text: "El branding que crearon para nosotros captura perfectamente la esencia de nuestra marca. Profesionales al 100%.",
     rating: 5,
     result: "+95% reconocimiento",
@@ -171,8 +171,8 @@ export const testimonials = [
   {
     name: "María López",
     role: "Gerente de Servicio",
-    company: "ServiMax",
-    text: "El chatbot maneja más del 60% de nuestras consultas. Nuestro equipo ahora se enfoca en lo que importa.",
+    company: "Dos Aguas",
+    text: "Nuestros clientes ya no nos preguntan el menú por mensaje. Todo está en la página y recibimos más visitas al local.",
     rating: 5,
     result: "-60% tickets",
   },
