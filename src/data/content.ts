@@ -4,6 +4,11 @@ import portfolio3 from "@/assets/portfolio-3.jpg";
 import portfolio4 from "@/assets/portfolio-4.jpg";
 import portfolio5 from "@/assets/portfolio-5.jpg";
 import portfolio6 from "@/assets/portfolio-6.jpg";
+import portfolio7 from "@/assets/portfolio-7.jpg";
+import portfolio8 from "@/assets/portfolio-8.jpg";
+import portfolio9 from "@/assets/portfolio-9.jpg";
+import portfolio10 from "@/assets/portfolio-10.jpg";
+import portfolio11 from "@/assets/portfolio-11.jpg";
 
 export const services = [
   {
@@ -140,6 +145,61 @@ export const portfolioItems = [
     client: "IndustriaMX",
     results: "+35% eficiencia operativa",
     stack: ["React", "Express", "PostgreSQL", "Docker"],
+  },
+  {
+    id: "7",
+    title: "Café Artesanal",
+    category: "Branding",
+    description: "Identidad de marca completa para cafetería premium. Logo, packaging, vasos y material POP.",
+    image: portfolio7,
+    tags: ["Branding", "Packaging", "Diseño"],
+    client: "Café Molino",
+    results: "+200% engagement en redes",
+    stack: ["Illustrator", "Photoshop", "InDesign"],
+  },
+  {
+    id: "8",
+    title: "Gym Fitness",
+    category: "Branding",
+    description: "Branding deportivo para gimnasio. Merchandising, señalética y presencia digital unificada.",
+    image: portfolio8,
+    tags: ["Branding", "Merchandising", "Digital"],
+    client: "PowerFit GYM",
+    results: "+150% membresías nuevas",
+    stack: ["Illustrator", "Figma", "After Effects"],
+  },
+  {
+    id: "9",
+    title: "Inmobiliaria Premium",
+    category: "Branding",
+    description: "Identidad corporativa de lujo para agencia inmobiliaria. Papelería, tarjetas y manual de marca.",
+    image: portfolio9,
+    tags: ["Branding", "Corporativo", "Lujo"],
+    client: "Residencial Elite",
+    results: "+80% percepción de valor",
+    stack: ["Illustrator", "InDesign", "Photoshop"],
+  },
+  {
+    id: "10",
+    title: "Salón de Belleza",
+    category: "Branding",
+    description: "Diseño de marca femenina y elegante. Packaging de productos, bolsas y etiquetas personalizadas.",
+    image: portfolio10,
+    tags: ["Branding", "Packaging", "Femenino"],
+    client: "Glow Beauty Studio",
+    results: "+120% ventas de productos",
+    stack: ["Illustrator", "Photoshop", "Figma"],
+  },
+  {
+    id: "11",
+    title: "Cervecería Artesanal",
+    category: "Branding",
+    description: "Branding rústico-moderno para cervecería craft. Etiquetas, merchandising y experiencia de marca.",
+    image: portfolio11,
+    tags: ["Branding", "Etiquetas", "Packaging"],
+    client: "Cervecería Norte",
+    results: "+90% reconocimiento local",
+    stack: ["Illustrator", "Photoshop", "InDesign"],
   },
 ];
 
