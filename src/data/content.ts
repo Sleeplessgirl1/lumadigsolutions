@@ -162,7 +162,7 @@ export const portfolioItems = [
     title: "CREACIÓN DE FLYERS",
     category: "Branding",
     description: "Branding para Videojuego indie, diseño de logotipo, paleta de colores, tipografía. ",
-    image: "/315299f5-15f2-4a7d-b1b3-22f4d984148c.png",
+    image: "https://lovable-uploads.s3.us-west-2.amazonaws.com/bf0aa9ec-106b-4eb8-bead-2749bb472f31.jpg",
     tags: ["Branding", "VideoJuegos", "Digital"],
     client: "PowerFit GYM",
     results: "+150% membresías nuevas",
