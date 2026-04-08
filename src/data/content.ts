@@ -195,7 +195,7 @@ export const portfolioItems = [
     title: "​PUBLICIDAD COPRPORATIVA",
     category: "Branding",
     description: "Branding rústico-moderno para empresas. Publicaciones, reels y experiencia de marca.",
-    image: "user-uploads://3a1ce240-cd67-4f3d-9721-b0fc4563226b.png",
+    image: "user-uploads://c22dc6a9-8272-4c1d-b43a-b5873cca29fb.png",
     tags: ["Branding", "Etiquetas", "Packaging"],
     client: "Luma",
     results: "+90% reconocimiento local",
