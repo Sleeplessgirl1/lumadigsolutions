@@ -153,9 +153,9 @@ export const portfolioItems = [
     description: "Diseño de e-commerce para agencia de marketing, utilizando la paleta de colores correspondiente.",
     image: portfolio7,
     tags: ["Branding", "e-commerce", "Diseño"],
-    client: "Café Molino",
+    client: "Clever Media",
     results: "+200% engagement en redes",
-    stack: ["Illustrator", "Photoshop", "InDesign"],
+    stack: ["Shopify", "Photoshop", "Figma"],
   },
   {
     id: "8",
