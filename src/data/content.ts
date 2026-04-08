@@ -4,7 +4,7 @@ import portfolio3 from "@/assets/portfolio-3.jpg";
 import portfolio4 from "@/assets/portfolio-4.jpg";
 import portfolio5 from "@/assets/portfolio-5.jpg";
 import portfolio6 from "@/assets/portfolio-6.jpg";
-import portfolio7 from "@/assets/portfolio-7.jpg";
+import portfolio7 from "@/assets/portfolio-7.png";
 import portfolio8 from "@/assets/portfolio-8.jpg";
 import portfolio9 from "@/assets/portfolio-9.jpg";
 import portfolio10 from "@/assets/portfolio-10.jpg";
@@ -153,9 +153,9 @@ export const portfolioItems = [
     description: "Diseño de e-commerce para agencia de marketing, utilizando la paleta de colores correspondiente.",
     image: portfolio7,
     tags: ["Branding", "e-commerce", "Diseño"],
-    client: "Café Molino",
+    client: "Clever Media",
     results: "+200% engagement en redes",
-    stack: ["Illustrator", "Photoshop", "InDesign"],
+    stack: ["Shopify", "Photoshop", "Figma"],
   },
   {
     id: "8",
