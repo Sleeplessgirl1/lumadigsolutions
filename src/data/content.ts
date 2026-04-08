@@ -186,9 +186,9 @@ export const portfolioItems = [
     description: "Creación de portadas para libro, de acuerdo a temáticas.",
     image: portfolio10,
     tags: ["Marca", "Ilustración", "Diseño"],
-    client: "Glow Beauty Studio",
-    results: "+120% ventas de productos",
-    stack: ["Illustrator", "Photoshop", "Figma"],
+    client: "F. Rocha",
+    results: "+100% visibilidad de productos",
+    stack: ["Illustrator", "Photoshop", "Diseño"],
   },
   {
     id: "11",
