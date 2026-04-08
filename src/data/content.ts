@@ -175,7 +175,7 @@ export const portfolioItems = [
     description: "Identidad de tu marca de lujo para todo tipo de empresa. Papelería, tarjetas y manual de marca.",
     image: portfolio9,
     tags: ["Branding", "Diseño", "Marketing"],
-    client: "Residencial Elite",
+    client: "Loom IA",
     results: "+80% percepción de valor",
     stack: ["Illustrator", "InDesign", "Photoshop"],
   },
