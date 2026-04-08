@@ -8,7 +8,7 @@ import portfolio7 from "@/assets/portfolio-7.png";
 import portfolio8 from "@/assets/portfolio-8.jpg";
 import portfolio9 from "@/assets/portfolio-9.png";
 import portfolio10 from "@/assets/portfolio-10.jpg";
-import portfolio11 from "@/assets/portfolio-11.jpg";
+// portfolio11 removed
 
 export const services = [
   {
@@ -195,9 +195,9 @@ export const portfolioItems = [
     title: "​PUBLICIDAD COPRPORATIVA",
     category: "Branding",
     description: "Branding rústico-moderno para empresas. Publicaciones, reels y experiencia de marca.",
-    image: portfolio11,
+    image: "user-uploads://17bc2227-91e8-43dc-93bf-dd7033f8ee38.jpg",
     tags: ["Branding", "Etiquetas", "Packaging"],
-    client: "Cervecería Norte",
+    client: "Luma",
     results: "+90% reconocimiento local",
     stack: ["Illustrator", "Photoshop", "InDesign"],
   },
